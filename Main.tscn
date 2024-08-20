@@ -1,17 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgkgfr60fccil"]
+[gd_scene load_steps=6 format=3 uid="uid://bgkgfr60fccil"]
 
 [ext_resource type="PackedScene" uid="uid://dk17005eayofj" path="res://scenes/floor/floor.tscn" id="2_iyapn"]
 [ext_resource type="PackedScene" uid="uid://boi4caq6r33hb" path="res://scenes/models/ship-large.glb" id="2_kxmpi"]
 [ext_resource type="Script" path="res://camera_animation.gd" id="3_hdxcd"]
 [ext_resource type="Environment" uid="uid://cfkrehqdxj313" path="res://scenes/camera/Environment.tres" id="4_umpv8"]
+[ext_resource type="PackedScene" uid="uid://dwwgoodo0f43m" path="res://scenes/water/WaterPlane.tscn" id="5_rul4b"]
 
 [node name="Main" type="Node3D"]
 
 [node name="Floor" parent="." instance=ExtResource("2_iyapn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.96173, 0)
+visible = false
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.257217, -0.836887, 0.483177, 0, 0.5, 0.866025, -0.966354, 0.222757, -0.128609, 19.5433, 16, 8)
 shadow_enabled = true
+shadow_bias = 4.0
+shadow_normal_bias = 1.0
 
 [node name="ship-large2" parent="." instance=ExtResource("2_kxmpi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.699889, 0)
@@ -21,7 +26,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.21205, 0)
 script = ExtResource("3_hdxcd")
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 0.897528, 0.440958, 0, -0.440958, 0.897528, 0, 4.96147, 12.6278)
+transform = Transform3D(1, 0, 0, 0, 0.985674, 0.168661, 0, -0.168661, 0.985674, 0, 4.96147, 12.6278)
 environment = ExtResource("4_umpv8")
 current = true
 fov = 70.0
+
+[node name="Water" parent="." instance=ExtResource("5_rul4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00229871, -0.265676, 0)
