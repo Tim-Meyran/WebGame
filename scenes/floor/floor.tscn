@@ -8,5 +8,5 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.922049, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
-size = Vector3(200, 1, 200)
+size = Vector3(10000, 1, 10000)
 material = ExtResource("1_hq45c")
