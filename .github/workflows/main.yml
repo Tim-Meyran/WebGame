@@ -38,7 +38,7 @@ jobs:
           path: ${{ steps.export.outputs.build_directory }}
 
   deploy:
-    needs: build_site
+    needs: export_game
     runs-on: ubuntu-latest
     permissions:
       pages: write
