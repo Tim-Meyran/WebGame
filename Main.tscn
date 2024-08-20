@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgkgfr60fccil"]
+
+[ext_resource type="PackedScene" uid="uid://c3ar7yuh2f3gh" path="res://scenes/camera/debug_camera.tscn" id="1_vgann"]
+[ext_resource type="PackedScene" uid="uid://dk17005eayofj" path="res://scenes/floor/floor.tscn" id="2_iyapn"]
+
+[node name="Main" type="Node3D"]
+
+[node name="DebugCamera" parent="." instance=ExtResource("1_vgann")]
+
+[node name="Floor" parent="." instance=ExtResource("2_iyapn")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 16, 8)

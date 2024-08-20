@@ -1,0 +1,13 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://cfkrehqdxj313"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vuc4n"]
+
+[sub_resource type="Sky" id="Sky_efaxn"]
+sky_material = SubResource("ProceduralSkyMaterial_vuc4n")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_efaxn")
+ambient_light_source = 3
+ambient_light_color = Color(0.367501, 0.865825, 1, 1)
+sdfgi_enabled = true

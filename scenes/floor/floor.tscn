@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk17005eayofj"]
+
+[ext_resource type="Material" uid="uid://bi0rsvbie0ofd" path="res://scenes/floor/Grid-Texture.tres" id="1_hq45c"]
+
+[node name="Floor" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.922049, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+size = Vector3(200, 1, 200)
+material = ExtResource("1_hq45c")
