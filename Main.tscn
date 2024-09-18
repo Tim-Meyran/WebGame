@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://bgkgfr60fccil"]
+[gd_scene load_steps=8 format=3 uid="uid://bgkgfr60fccil"]
 
 [ext_resource type="PackedScene" uid="uid://dk17005eayofj" path="res://scenes/floor/floor.tscn" id="2_iyapn"]
 [ext_resource type="PackedScene" uid="uid://boi4caq6r33hb" path="res://scenes/models/ship-large.glb" id="2_kxmpi"]
 [ext_resource type="Script" path="res://camera_animation.gd" id="3_hdxcd"]
 [ext_resource type="Environment" uid="uid://cfkrehqdxj313" path="res://scenes/camera/Environment.tres" id="4_umpv8"]
 [ext_resource type="PackedScene" uid="uid://dwwgoodo0f43m" path="res://scenes/water/WaterPlane.tscn" id="5_rul4b"]
+[ext_resource type="PackedScene" uid="uid://1ec10xqju0s3" path="res://scenes/island/island.glb" id="6_uj2ce"]
+[ext_resource type="PackedScene" uid="uid://dfhpkt63waxiu" path="res://scenes/player/Player.tscn" id="7_efmsl"]
 
 [node name="Main" type="Node3D"]
 
@@ -21,15 +23,23 @@ shadow_normal_bias = 1.0
 [node name="ship-large2" parent="." instance=ExtResource("2_kxmpi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.699889, 0)
 
-[node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.21205, 0)
+[node name="Water" parent="." instance=ExtResource("5_rul4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00229871, -0.265676, 0)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("7_efmsl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 7, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CharacterBody3D"]
+
+[node name="island" parent="." instance=ExtResource("6_uj2ce")]
+transform = Transform3D(10, 0, 0, 0, 2, 0, 0, 0, 10, -0.660776, -3.09071, 13.6349)
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4307, 3.21205, 0)
 script = ExtResource("3_hdxcd")
 
-[node name="Camera3D" type="Camera3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 0.985674, 0.168661, 0, -0.168661, 0.985674, 0, 4.96147, 12.6278)
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.901077, 0.433659, 0, -0.433659, 0.901077, 0, 4.271, 2.943)
 environment = ExtResource("4_umpv8")
 current = true
 fov = 70.0
-
-[node name="Water" parent="." instance=ExtResource("5_rul4b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00229871, -0.265676, 0)
