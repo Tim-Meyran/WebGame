@@ -22,11 +22,6 @@ shadow_normal_bias = 1.0
 [node name="ship-large2" parent="." instance=ExtResource("2_kxmpi")]
 transform = Transform3D(0.732158, 0, 1.86117, 0, 2, 0, -1.86117, 0, 0.732158, -3.70706, -0.699889, -54.3563)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("7_efmsl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1.95493, 0)
-
-[node name="SpringArm3D" type="SpringArm3D" parent="CharacterBody3D"]
-
 [node name="CameraPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4307, 3.21205, 0)
 script = ExtResource("3_hdxcd")
@@ -38,3 +33,5 @@ current = true
 fov = 70.0
 
 [node name="Node3D" parent="." instance=ExtResource("6_14pca")]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("7_efmsl")]
