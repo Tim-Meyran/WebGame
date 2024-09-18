@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://1ec10xqju0s3"
-path="res://.godot/imported/island.glb-3d11d0710fdc3c66c352d7845bd89f45.scn"
+uid="uid://cu0kt8k1appda"
+path="res://.godot/imported/stones1.glb-2b8fd46962085726394d3241d93556b5.scn"
 
 [deps]
 
-source_file="res://scenes/island/island.glb"
-dest_files=["res://.godot/imported/island.glb-3d11d0710fdc3c66c352d7845bd89f45.scn"]
+source_file="res://godot_assets/models/stones1.glb"
+dest_files=["res://.godot/imported/stones1.glb-2b8fd46962085726394d3241d93556b5.scn"]
 
 [params]
 
@@ -33,8 +33,8 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:Plane": {
-"generate/navmesh": 1,
+"PATH:Stones1Mesh": {
+"decomposition/precision": 10,
 "generate/physics": true
 }
 }

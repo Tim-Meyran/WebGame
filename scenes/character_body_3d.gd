@@ -14,7 +14,7 @@ func _ready():
 	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
-	if not is_on_floor():
+	if not is_on_floor() and global_position.y > 0.0:
 		velocity += get_gravity() * delta
 
 	# Handle jump.
@@ -32,6 +32,11 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		
+	#Water
+	if global_position.y < 0.0:
+		velocity.y *= 0.99
+		velocity.y += delta * abs(global_position.y)
 
 	move_and_slide()
 	

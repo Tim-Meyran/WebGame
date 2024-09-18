@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1cmmwo2iuind"]
+
+[ext_resource type="PackedScene" uid="uid://1ec10xqju0s3" path="res://godot_assets/models/island.glb" id="1_p1psf"]
+[ext_resource type="PackedScene" uid="uid://dwwgoodo0f43m" path="res://scenes/water/WaterPlane.tscn" id="2_sgcem"]
+[ext_resource type="PackedScene" uid="uid://cu0kt8k1appda" path="res://godot_assets/models/stones1.glb" id="3_dykhc"]
+[ext_resource type="PackedScene" uid="uid://cu025ok3qbepp" path="res://godot_assets/models/stones2.glb" id="4_mfxti"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="island" parent="." instance=ExtResource("1_p1psf")]
+
+[node name="Water" parent="." instance=ExtResource("2_sgcem")]
+
+[node name="stones1" parent="." instance=ExtResource("3_dykhc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9708, 0, -22.7393)
+
+[node name="stones2" parent="." instance=ExtResource("4_mfxti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1504, 0, 28.8419)
