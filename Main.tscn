@@ -27,7 +27,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4307, 3.21205, 0)
 script = ExtResource("3_hdxcd")
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 0.52703, 0.849847, 0, -0.849847, 0.52703, 0, 18.6413, 7.3592)
+transform = Transform3D(1, 0, 0, 0, 0.52703, 0.849847, 0, -0.849847, 0.52703, 0, 11.0692, 5.52354)
 environment = ExtResource("4_umpv8")
 current = true
 fov = 70.0
@@ -35,3 +35,4 @@ fov = 70.0
 [node name="Node3D" parent="." instance=ExtResource("6_14pca")]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("7_efmsl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69652, 2.50735, 0)

@@ -1,9 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1cmmwo2iuind"]
+[gd_scene load_steps=13 format=3 uid="uid://d1cmmwo2iuind"]
 
 [ext_resource type="PackedScene" uid="uid://1ec10xqju0s3" path="res://godot_assets/models/island.glb" id="1_p1psf"]
 [ext_resource type="PackedScene" uid="uid://dwwgoodo0f43m" path="res://scenes/water/WaterPlane.tscn" id="2_sgcem"]
 [ext_resource type="PackedScene" uid="uid://cu0kt8k1appda" path="res://godot_assets/models/stones1.glb" id="3_dykhc"]
 [ext_resource type="PackedScene" uid="uid://cu025ok3qbepp" path="res://godot_assets/models/stones2.glb" id="4_mfxti"]
+[ext_resource type="PackedScene" uid="uid://cgs03t51ius6v" path="res://godot_assets/models/chest.gltf" id="5_dwlgm"]
+[ext_resource type="PackedScene" uid="uid://w8y6getu5qhg" path="res://godot_assets/models/formationLarge_rock.gltf" id="6_4gvgb"]
+[ext_resource type="PackedScene" uid="uid://20id06ei3fpi" path="res://godot_assets/models/palm_detailed_long.gltf" id="7_inxpp"]
+[ext_resource type="PackedScene" uid="uid://dvvn8lnmxt702" path="res://godot_assets/models/palm_detailed_short.gltf" id="8_ugxa2"]
+[ext_resource type="PackedScene" uid="uid://c7hed3q6al180" path="res://godot_assets/models/palm_long.gltf" id="9_pl7ia"]
+[ext_resource type="PackedScene" uid="uid://bip7ls47rkuhy" path="res://godot_assets/models/palm_short.gltf" id="10_wk8yo"]
+[ext_resource type="PackedScene" uid="uid://u3xy747ixb27" path="res://godot_assets/models/plant.gltf" id="11_pxlgh"]
+[ext_resource type="PackedScene" uid="uid://bs8e87lgmp1ed" path="res://godot_assets/models/tower.gltf" id="12_kuvtw"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -12,7 +20,70 @@
 [node name="Water" parent="." instance=ExtResource("2_sgcem")]
 
 [node name="stones1" parent="." instance=ExtResource("3_dykhc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0415, 0, -1.32267)
+transform = Transform3D(0.865, 0, 0, 0, 0.265, 0, 0, 0, 0.865, 22.0415, 0, -1.32267)
 
 [node name="stones2" parent="." instance=ExtResource("4_mfxti")]
-transform = Transform3D(-0.0133165, 0, -0.999911, 0, 1, 0, 0.999911, 0, -0.0133165, -6.9985, 1.90735e-06, 7.15825)
+transform = Transform3D(-0.00912182, 0, -0.609946, 0, 0.325, 0, 0.684939, 0, -0.00812308, -6.9985, 1.90735e-06, 7.15825)
+
+[node name="chest2" parent="." instance=ExtResource("5_dwlgm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.77741, 0.372486, 8.39477)
+
+[node name="formationLarge_rock2" parent="." instance=ExtResource("6_4gvgb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2506, 0.393133, 13.5392)
+
+[node name="tower2" parent="." instance=ExtResource("12_kuvtw")]
+transform = Transform3D(0.660277, 0, -0.751022, 0, 1, 0, 0.751022, 0, 0.660277, -10.2643, 0.165875, -16.8619)
+
+[node name="Palms" type="Node3D" parent="."]
+transform = Transform3D(0.775771, 0, -0.631014, 0, 1, 0, 0.631014, 0, 0.775771, 9.85717, 0, -11.8232)
+
+[node name="palm_detailed_long2" parent="Palms" instance=ExtResource("7_inxpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.791159, 0, 7.25897)
+
+[node name="palm_detailed_short2" parent="Palms" instance=ExtResource("8_ugxa2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.23695, 0.39016, 1.72614)
+
+[node name="palm_long2" parent="Palms" instance=ExtResource("9_pl7ia")]
+transform = Transform3D(0.851379, 0, 0.524551, 0, 1, 0, -0.524551, 0, 0.851379, 1.3011, 0.388927, 5.59846)
+
+[node name="palm_long3" parent="Palms" instance=ExtResource("9_pl7ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.124643, 0.388927, 2.61167)
+
+[node name="palm_short2" parent="Palms" instance=ExtResource("10_wk8yo")]
+transform = Transform3D(0.817668, 0, -0.57569, 0, 1, 0, 0.57569, 0, 0.817668, -3.41758, 0.384444, 1.26597)
+
+[node name="plant2" parent="Palms" instance=ExtResource("11_pxlgh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.287519, 0.371813, 5.73288)
+
+[node name="plant3" parent="Palms" instance=ExtResource("11_pxlgh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.42732, 0.371813, 4.50728)
+
+[node name="plant4" parent="Palms" instance=ExtResource("11_pxlgh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.694164, 0.371813, 3.09201)
+
+[node name="Palms2" type="Node3D" parent="."]
+transform = Transform3D(0.775771, 0, -0.631014, 0, 1, 0, 0.631014, 0, 0.775771, 12.0868, 0, 20.3945)
+
+[node name="palm_detailed_long2" parent="Palms2" instance=ExtResource("7_inxpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.791159, 0, 7.25897)
+
+[node name="palm_detailed_short2" parent="Palms2" instance=ExtResource("8_ugxa2")]
+transform = Transform3D(0.90818, 0, -0.418581, 0, 1, 0, 0.418581, 0, 0.90818, -4.75691, 0.39016, 3.11109)
+
+[node name="palm_long2" parent="Palms2" instance=ExtResource("9_pl7ia")]
+transform = Transform3D(0.851379, 0, 0.524551, 0, 1, 0, -0.524551, 0, 0.851379, 1.3011, 0.388927, 5.59846)
+
+[node name="palm_long3" parent="Palms2" instance=ExtResource("9_pl7ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.12271, 0.388927, 6.5839)
+
+[node name="palm_short2" parent="Palms2" instance=ExtResource("10_wk8yo")]
+transform = Transform3D(0.460587, 0, -0.887614, 0, 1, 0, 0.887614, 0, 0.460587, -4.34936, 0.384444, -2.17599)
+
+[node name="plant2" parent="Palms2" instance=ExtResource("11_pxlgh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.287519, 0.371813, 5.73288)
+
+[node name="plant3" parent="Palms2" instance=ExtResource("11_pxlgh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.42732, 0.371813, 4.50728)
+
+[node name="plant4" parent="Palms2" instance=ExtResource("11_pxlgh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.13125, 0.371813, 3.35727)

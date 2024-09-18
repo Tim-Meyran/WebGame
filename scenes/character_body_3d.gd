@@ -25,7 +25,13 @@ func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("PLAYER_LEFT", "PLAYER_RIGHT", "PLAYER_FORWARD", "PLAYER_BACK")
 	var direction := Vector3(input_dir.x, 0, input_dir.y)
 	
-	look_at(position + direction,Vector3.UP) 
+	if direction.length() > 0.1:
+		rotation.y = lerp_angle(rotation.y,atan2(-direction.x, -direction.z),15*delta)
+	
+	#var newDir = Basis.looking_at(direction,Vector3.UP).get_euler()
+	#rotation = lerp(rotation,newDir,delta*10)
+	
+	#look_at() 
 	
 	var currSpeed = SPEED
 	if Input.is_action_pressed("PLAYER_SPRINT") and is_on_floor():
@@ -50,7 +56,8 @@ func _physics_process(delta: float) -> void:
 	var speed = Vector2(velocity.x,velocity.z).length()
 	#print(speed)
 	if animationTree:
-		animationTree.set("parameters/BlendSpace1D/blend_position",speed/4.0)
+		var oldAnimSpeed = animationTree.get("parameters/BlendSpace1D/blend_position")
+		animationTree.set("parameters/BlendSpace1D/blend_position",lerp(oldAnimSpeed, speed/4.0,delta*10))
 
 #func _unhandled_input(event):
 #	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
