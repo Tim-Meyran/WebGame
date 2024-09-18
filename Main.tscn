@@ -20,14 +20,14 @@ shadow_bias = 4.0
 shadow_normal_bias = 1.0
 
 [node name="ship-large2" parent="." instance=ExtResource("2_kxmpi")]
-transform = Transform3D(0.732158, 0, 1.86117, 0, 2, 0, -1.86117, 0, 0.732158, -3.70706, -0.699889, -54.3563)
+transform = Transform3D(0.366079, 0, 0.930584, 0, 1, 0, -0.930584, 0, 0.366079, -1.40008, -0.699887, -26.8555)
 
 [node name="CameraPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4307, 3.21205, 0)
 script = ExtResource("3_hdxcd")
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 0.901077, 0.433659, 0, -0.433659, 0.901077, 0, 4.271, 2.943)
+transform = Transform3D(1, 0, 0, 0, 0.52703, 0.849847, 0, -0.849847, 0.52703, 0, 18.6413, 7.3592)
 environment = ExtResource("4_umpv8")
 current = true
 fov = 70.0

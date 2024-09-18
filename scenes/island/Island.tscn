@@ -12,7 +12,7 @@
 [node name="Water" parent="." instance=ExtResource("2_sgcem")]
 
 [node name="stones1" parent="." instance=ExtResource("3_dykhc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9708, 0, -22.7393)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0415, 0, -1.32267)
 
 [node name="stones2" parent="." instance=ExtResource("4_mfxti")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1504, 0, 28.8419)
+transform = Transform3D(-0.0133165, 0, -0.999911, 0, 1, 0, 0.999911, 0, -0.0133165, -6.9985, 1.90735e-06, 7.15825)
