@@ -1,0 +1,42 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://vxqdsx4y0ia2"
+path="res://.godot/imported/tree_pineRoundA.glb-61faa5b2767c7539ca542fe92b4561cb.scn"
+
+[deps]
+
+source_file="res://godot_assets/tiles/tree_pineRoundA.glb"
+dest_files=["res://.godot/imported/tree_pineRoundA.glb-61faa5b2767c7539ca542fe92b4561cb.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"nodes": {
+"PATH:tmpParent/tree_pineRoundA": {
+"generate/physics": true
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

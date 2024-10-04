@@ -1,0 +1,992 @@
+[gd_scene load_steps=330 format=3 uid="uid://dfjl7dy4cce62"]
+
+[ext_resource type="PackedScene" uid="uid://brci4ee1gc0up" path="res://godot_assets/tiles/bed.glb" id="1_6gye2"]
+[ext_resource type="PackedScene" uid="uid://bl1lqyylnrqag" path="res://godot_assets/tiles/bed_floor.glb" id="2_d80uj"]
+[ext_resource type="PackedScene" uid="uid://dq1jnkl6mw3it" path="res://godot_assets/tiles/bridge_center_stone.glb" id="3_tcv0c"]
+[ext_resource type="PackedScene" uid="uid://b7q6y84y8t20w" path="res://godot_assets/tiles/bridge_center_stoneRound.glb" id="4_y0ab2"]
+[ext_resource type="PackedScene" uid="uid://bwbjx72qp5bj4" path="res://godot_assets/tiles/bridge_center_wood.glb" id="5_560wf"]
+[ext_resource type="PackedScene" uid="uid://bw0a4dhw7cfjg" path="res://godot_assets/tiles/bridge_center_woodRound.glb" id="6_er2mj"]
+[ext_resource type="PackedScene" uid="uid://dxhtfq3f6ivbl" path="res://godot_assets/tiles/bridge_side_stone.glb" id="7_mng2w"]
+[ext_resource type="PackedScene" uid="uid://dg2b2e1l67i3x" path="res://godot_assets/tiles/bridge_side_stoneRound.glb" id="8_vpyix"]
+[ext_resource type="PackedScene" uid="uid://bgs1enkl6bts2" path="res://godot_assets/tiles/bridge_side_wood.glb" id="9_ru5q2"]
+[ext_resource type="PackedScene" uid="uid://cdrok8quqmcio" path="res://godot_assets/tiles/bridge_side_woodRound.glb" id="10_gi2td"]
+[ext_resource type="PackedScene" uid="uid://c1ewflkwqem51" path="res://godot_assets/tiles/bridge_stone.glb" id="11_hgjyc"]
+[ext_resource type="PackedScene" uid="uid://b2tk5h0i68721" path="res://godot_assets/tiles/bridge_stoneNarrow.glb" id="12_ys4h5"]
+[ext_resource type="PackedScene" uid="uid://d4ccimrdpjv8a" path="res://godot_assets/tiles/bridge_stoneRound.glb" id="13_6jtue"]
+[ext_resource type="PackedScene" uid="uid://74mr2r5scuoq" path="res://godot_assets/tiles/bridge_stoneRoundNarrow.glb" id="14_horeu"]
+[ext_resource type="PackedScene" uid="uid://ba1s2bq0ag7ku" path="res://godot_assets/tiles/bridge_wood.glb" id="15_vt310"]
+[ext_resource type="PackedScene" uid="uid://b2e2hlg6m5nkp" path="res://godot_assets/tiles/bridge_woodNarrow.glb" id="16_gnpyg"]
+[ext_resource type="PackedScene" uid="uid://fr1hbi64xujm" path="res://godot_assets/tiles/bridge_woodRound.glb" id="17_ti3mx"]
+[ext_resource type="PackedScene" uid="uid://d2aqyfwl3ytww" path="res://godot_assets/tiles/bridge_woodRoundNarrow.glb" id="18_m6qyr"]
+[ext_resource type="PackedScene" uid="uid://dl72rup1fjmal" path="res://godot_assets/tiles/cactus_short.glb" id="19_xo4qj"]
+[ext_resource type="PackedScene" uid="uid://5c26ouamve0" path="res://godot_assets/tiles/cactus_tall.glb" id="20_s3y7q"]
+[ext_resource type="PackedScene" uid="uid://djxv38s01l7qu" path="res://godot_assets/tiles/campfire_bricks.glb" id="21_67c6o"]
+[ext_resource type="PackedScene" uid="uid://dig56l781rwm8" path="res://godot_assets/tiles/campfire_logs.glb" id="22_pclwp"]
+[ext_resource type="PackedScene" uid="uid://dllv62erplf0q" path="res://godot_assets/tiles/campfire_planks.glb" id="23_pcexn"]
+[ext_resource type="PackedScene" uid="uid://bq5le10lnx3yt" path="res://godot_assets/tiles/campfire_stones.glb" id="24_6l6gm"]
+[ext_resource type="PackedScene" uid="uid://mlt4e0okfvpn" path="res://godot_assets/tiles/canoe.glb" id="25_e7gwf"]
+[ext_resource type="PackedScene" uid="uid://7u81u7q06s4n" path="res://godot_assets/tiles/canoe_paddle.glb" id="26_mcy8r"]
+[ext_resource type="PackedScene" uid="uid://csphhu44l22xe" path="res://godot_assets/tiles/cliff_blockCave_rock.glb" id="27_65kxr"]
+[ext_resource type="PackedScene" uid="uid://dow6aoak8i1ac" path="res://godot_assets/tiles/cliff_blockCave_stone.glb" id="28_at61m"]
+[ext_resource type="PackedScene" uid="uid://20iimxbjn1l3" path="res://godot_assets/tiles/cliff_blockDiagonal_rock.glb" id="29_wmena"]
+[ext_resource type="PackedScene" uid="uid://dhfs2ks72a6a" path="res://godot_assets/tiles/cliff_blockDiagonal_stone.glb" id="30_gvmvf"]
+[ext_resource type="PackedScene" uid="uid://bh2qya8am106p" path="res://godot_assets/tiles/cliff_blockHalf_rock.glb" id="31_7tu0t"]
+[ext_resource type="PackedScene" uid="uid://drwnnumvv6ood" path="res://godot_assets/tiles/cliff_blockHalf_stone.glb" id="32_v4rth"]
+[ext_resource type="PackedScene" uid="uid://ck83hn0jfnvtu" path="res://godot_assets/tiles/cliff_blockQuarter_rock.glb" id="33_oo7jl"]
+[ext_resource type="PackedScene" uid="uid://r26mcbpmm4tx" path="res://godot_assets/tiles/cliff_blockQuarter_stone.glb" id="34_vb0yj"]
+[ext_resource type="PackedScene" uid="uid://cd0uksxk3qsx" path="res://godot_assets/tiles/cliff_blockSlopeHalfWalls_rock.glb" id="35_na3k5"]
+[ext_resource type="PackedScene" uid="uid://c5jubut4qxofq" path="res://godot_assets/tiles/cliff_blockSlopeHalfWalls_stone.glb" id="36_f5xjc"]
+[ext_resource type="PackedScene" uid="uid://cuqbwvjq1i562" path="res://godot_assets/tiles/cliff_blockSlopeWalls_rock.glb" id="37_uc8ja"]
+[ext_resource type="PackedScene" uid="uid://88nskyewbcpj" path="res://godot_assets/tiles/cliff_blockSlopeWalls_stone.glb" id="38_xtpir"]
+[ext_resource type="PackedScene" uid="uid://cm5osl2jjx1ad" path="res://godot_assets/tiles/cliff_blockSlope_rock.glb" id="39_chqdn"]
+[ext_resource type="PackedScene" uid="uid://b1itdhyy60doi" path="res://godot_assets/tiles/cliff_blockSlope_stone.glb" id="40_uaylc"]
+[ext_resource type="PackedScene" uid="uid://be1ic75avosdj" path="res://godot_assets/tiles/cliff_block_rock.glb" id="41_svn6y"]
+[ext_resource type="PackedScene" uid="uid://5a0n5gvh5ccs" path="res://godot_assets/tiles/cliff_block_stone.glb" id="42_hajya"]
+[ext_resource type="PackedScene" uid="uid://dtva0fliqgq5q" path="res://godot_assets/tiles/cliff_cave_rock.glb" id="43_akfyf"]
+[ext_resource type="PackedScene" uid="uid://b4hv76h0weaol" path="res://godot_assets/tiles/cliff_cave_stone.glb" id="44_yycdm"]
+[ext_resource type="PackedScene" uid="uid://nsaesbxol4vg" path="res://godot_assets/tiles/cliff_cornerInnerLarge_rock.glb" id="45_x48e8"]
+[ext_resource type="PackedScene" uid="uid://doqah2h8yx2xl" path="res://godot_assets/tiles/cliff_cornerInnerLarge_stone.glb" id="46_kgc4c"]
+[ext_resource type="PackedScene" uid="uid://cxlokypou5t1w" path="res://godot_assets/tiles/cliff_cornerInnerTop_rock.glb" id="47_ydl3n"]
+[ext_resource type="PackedScene" uid="uid://c1evv17v54tq6" path="res://godot_assets/tiles/cliff_cornerInnerTop_stone.glb" id="48_yjcff"]
+[ext_resource type="PackedScene" uid="uid://dekreap7th1fe" path="res://godot_assets/tiles/cliff_cornerInner_rock.glb" id="49_cxram"]
+[ext_resource type="PackedScene" uid="uid://crtqs8de5toq8" path="res://godot_assets/tiles/cliff_cornerInner_stone.glb" id="50_8rvxy"]
+[ext_resource type="PackedScene" uid="uid://2q412orgrlao" path="res://godot_assets/tiles/cliff_cornerLarge_rock.glb" id="51_3tnw1"]
+[ext_resource type="PackedScene" uid="uid://bke5pij6bmy13" path="res://godot_assets/tiles/cliff_cornerLarge_stone.glb" id="52_iarog"]
+[ext_resource type="PackedScene" uid="uid://rpfoet7xrqca" path="res://godot_assets/tiles/cliff_cornerTop_rock.glb" id="53_vq5yb"]
+[ext_resource type="PackedScene" uid="uid://buqysfosyktal" path="res://godot_assets/tiles/cliff_cornerTop_stone.glb" id="54_hig86"]
+[ext_resource type="PackedScene" uid="uid://c3xwoa10nwwxs" path="res://godot_assets/tiles/cliff_corner_rock.glb" id="55_jq71h"]
+[ext_resource type="PackedScene" uid="uid://cjkhfgne7xy4i" path="res://godot_assets/tiles/cliff_corner_stone.glb" id="56_plk15"]
+[ext_resource type="PackedScene" uid="uid://c6ph7dvnqxh8k" path="res://godot_assets/tiles/cliff_diagonal_rock.glb" id="57_8x8rp"]
+[ext_resource type="PackedScene" uid="uid://ckt8s73kbefu1" path="res://godot_assets/tiles/cliff_diagonal_stone.glb" id="58_mo5vd"]
+[ext_resource type="PackedScene" uid="uid://dqf1cmp7ekcv4" path="res://godot_assets/tiles/cliff_halfCornerInner_rock.glb" id="59_cu45a"]
+[ext_resource type="PackedScene" uid="uid://xutsnclasd73" path="res://godot_assets/tiles/cliff_halfCornerInner_stone.glb" id="60_la0s7"]
+[ext_resource type="PackedScene" uid="uid://cfso0b0pndu42" path="res://godot_assets/tiles/cliff_halfCorner_rock.glb" id="61_7e3s5"]
+[ext_resource type="PackedScene" uid="uid://dr1b75pj7yyq8" path="res://godot_assets/tiles/cliff_halfCorner_stone.glb" id="62_u0jyt"]
+[ext_resource type="PackedScene" uid="uid://h4rcj12s2spa" path="res://godot_assets/tiles/cliff_half_rock.glb" id="63_rf6fx"]
+[ext_resource type="PackedScene" uid="uid://sd1joqbjf54n" path="res://godot_assets/tiles/cliff_half_stone.glb" id="64_tfen6"]
+[ext_resource type="PackedScene" uid="uid://cfqmm4xr4sdxk" path="res://godot_assets/tiles/cliff_large_rock.glb" id="65_o24id"]
+[ext_resource type="PackedScene" uid="uid://i7gm67nia0bu" path="res://godot_assets/tiles/cliff_large_stone.glb" id="66_ia0gk"]
+[ext_resource type="PackedScene" uid="uid://da3j5qhey4d23" path="res://godot_assets/tiles/cliff_rock.glb" id="67_kspdg"]
+[ext_resource type="PackedScene" uid="uid://b71upkxg00nru" path="res://godot_assets/tiles/cliff_stepsCornerInner_rock.glb" id="68_tnvk3"]
+[ext_resource type="PackedScene" uid="uid://dggwveun0r8us" path="res://godot_assets/tiles/cliff_stepsCornerInner_stone.glb" id="69_jw2d4"]
+[ext_resource type="PackedScene" uid="uid://bclym7rf2efsx" path="res://godot_assets/tiles/cliff_stepsCorner_rock.glb" id="70_mlou6"]
+[ext_resource type="PackedScene" uid="uid://bbockj7bmnpdv" path="res://godot_assets/tiles/cliff_stepsCorner_stone.glb" id="71_ml8ea"]
+[ext_resource type="PackedScene" uid="uid://dcqrrkxp4ebo7" path="res://godot_assets/tiles/cliff_steps_rock.glb" id="72_0n8ju"]
+[ext_resource type="PackedScene" uid="uid://ce3m1u68apu85" path="res://godot_assets/tiles/cliff_steps_stone.glb" id="73_lsvar"]
+[ext_resource type="PackedScene" uid="uid://b6kyumgsgx24a" path="res://godot_assets/tiles/cliff_stone.glb" id="74_v4lya"]
+[ext_resource type="PackedScene" uid="uid://cbnupu5ofj5bg" path="res://godot_assets/tiles/cliff_topDiagonal_rock.glb" id="75_ov156"]
+[ext_resource type="PackedScene" uid="uid://cwbwniwxw7bex" path="res://godot_assets/tiles/cliff_topDiagonal_stone.glb" id="76_r2oel"]
+[ext_resource type="PackedScene" uid="uid://dfphjfejpqjrk" path="res://godot_assets/tiles/cliff_top_rock.glb" id="77_uj4w7"]
+[ext_resource type="PackedScene" uid="uid://cu6axmynnchom" path="res://godot_assets/tiles/cliff_top_stone.glb" id="78_yu3t7"]
+[ext_resource type="PackedScene" uid="uid://gogmual8c211" path="res://godot_assets/tiles/cliff_waterfallTop_rock.glb" id="79_ku5rm"]
+[ext_resource type="PackedScene" uid="uid://dromhqjyoy8qp" path="res://godot_assets/tiles/cliff_waterfallTop_stone.glb" id="80_j7vtv"]
+[ext_resource type="PackedScene" uid="uid://c5s12l3se0soq" path="res://godot_assets/tiles/cliff_waterfall_rock.glb" id="81_brtim"]
+[ext_resource type="PackedScene" uid="uid://b7xfhmt25p7j5" path="res://godot_assets/tiles/cliff_waterfall_stone.glb" id="82_g210r"]
+[ext_resource type="PackedScene" uid="uid://cm84bhddid7bx" path="res://godot_assets/tiles/crops_bambooStageA.glb" id="83_12nw3"]
+[ext_resource type="PackedScene" uid="uid://dbwovks6db5eu" path="res://godot_assets/tiles/crops_bambooStageB.glb" id="84_ba762"]
+[ext_resource type="PackedScene" uid="uid://u4f8amy3jruv" path="res://godot_assets/tiles/crops_cornStageA.glb" id="85_xbgmr"]
+[ext_resource type="PackedScene" uid="uid://db8pjl0qjl8bo" path="res://godot_assets/tiles/crops_cornStageB.glb" id="86_m6wr8"]
+[ext_resource type="PackedScene" uid="uid://gps0oknnbns6" path="res://godot_assets/tiles/crops_cornStageC.glb" id="87_gos42"]
+[ext_resource type="PackedScene" uid="uid://b4jvxpa85oxqd" path="res://godot_assets/tiles/crops_cornStageD.glb" id="88_gslst"]
+[ext_resource type="PackedScene" uid="uid://be7rg7tj6ukgi" path="res://godot_assets/tiles/crops_dirtDoubleRow.glb" id="89_dj385"]
+[ext_resource type="PackedScene" uid="uid://bvmoftves2hmf" path="res://godot_assets/tiles/crops_dirtDoubleRowCorner.glb" id="90_676hc"]
+[ext_resource type="PackedScene" uid="uid://c7a5x0qp8ap7b" path="res://godot_assets/tiles/crops_dirtDoubleRowEnd.glb" id="91_7ly07"]
+[ext_resource type="PackedScene" uid="uid://bmlyygeefmio7" path="res://godot_assets/tiles/crops_dirtRow.glb" id="92_hyx81"]
+[ext_resource type="PackedScene" uid="uid://j3kmy30t5bf" path="res://godot_assets/tiles/crops_dirtRowCorner.glb" id="93_qabtn"]
+[ext_resource type="PackedScene" uid="uid://c62kl57i67p5x" path="res://godot_assets/tiles/crops_dirtRowEnd.glb" id="94_3xn81"]
+[ext_resource type="PackedScene" uid="uid://cnn0pyx25u7dx" path="res://godot_assets/tiles/crops_dirtSingle.glb" id="95_64cj7"]
+[ext_resource type="PackedScene" uid="uid://d2f48t6beo0ib" path="res://godot_assets/tiles/crops_leafsStageA.glb" id="96_3f0k4"]
+[ext_resource type="PackedScene" uid="uid://xaglrvd6iyrl" path="res://godot_assets/tiles/crops_leafsStageB.glb" id="97_jwakd"]
+[ext_resource type="PackedScene" uid="uid://3iiovajnxuft" path="res://godot_assets/tiles/crops_wheatStageA.glb" id="98_5vr8p"]
+[ext_resource type="PackedScene" uid="uid://uqyp4m5u5rmg" path="res://godot_assets/tiles/crops_wheatStageB.glb" id="99_i3nkd"]
+[ext_resource type="PackedScene" uid="uid://7stv0qftuqsb" path="res://godot_assets/tiles/crop_carrot.glb" id="100_w5s78"]
+[ext_resource type="PackedScene" uid="uid://b0tpw7bi14lix" path="res://godot_assets/tiles/crop_melon.glb" id="101_2y7vj"]
+[ext_resource type="PackedScene" uid="uid://chd540avvxhhg" path="res://godot_assets/tiles/crop_pumpkin.glb" id="102_6njmt"]
+[ext_resource type="PackedScene" uid="uid://dufkhspq1163n" path="res://godot_assets/tiles/crop_turnip.glb" id="103_4ylff"]
+[ext_resource type="PackedScene" uid="uid://citvq4iniquvf" path="res://godot_assets/tiles/fence_bend.glb" id="104_2xwhp"]
+[ext_resource type="PackedScene" uid="uid://shyiox162vqk" path="res://godot_assets/tiles/fence_bendCenter.glb" id="105_jl8iv"]
+[ext_resource type="PackedScene" uid="uid://dcfctfjwr0twe" path="res://godot_assets/tiles/fence_corner.glb" id="106_iv23r"]
+[ext_resource type="PackedScene" uid="uid://die0k2wlkkd2k" path="res://godot_assets/tiles/fence_gate.glb" id="107_fq32n"]
+[ext_resource type="PackedScene" uid="uid://6o06568dfrxn" path="res://godot_assets/tiles/fence_planks.glb" id="108_nav6j"]
+[ext_resource type="PackedScene" uid="uid://bldatx7ynxgsf" path="res://godot_assets/tiles/fence_planksDouble.glb" id="109_qmp0r"]
+[ext_resource type="PackedScene" uid="uid://bbcbvo2lmeyl1" path="res://godot_assets/tiles/fence_simple.glb" id="110_qf7ul"]
+[ext_resource type="PackedScene" uid="uid://bdfswr8e2ov1q" path="res://godot_assets/tiles/fence_simpleCenter.glb" id="111_d5bs8"]
+[ext_resource type="PackedScene" uid="uid://g4psjteemrnj" path="res://godot_assets/tiles/fence_simpleDiagonal.glb" id="112_kbl0p"]
+[ext_resource type="PackedScene" uid="uid://b3t41qc8bu4v6" path="res://godot_assets/tiles/fence_simpleDiagonalCenter.glb" id="113_a472r"]
+[ext_resource type="PackedScene" uid="uid://de4a7c608mtr8" path="res://godot_assets/tiles/fence_simpleHigh.glb" id="114_7tcyv"]
+[ext_resource type="PackedScene" uid="uid://dm6flomforgrf" path="res://godot_assets/tiles/fence_simpleLow.glb" id="115_23yfb"]
+[ext_resource type="PackedScene" uid="uid://ccnpkvysirv3x" path="res://godot_assets/tiles/flower_purpleA.glb" id="116_1ll0r"]
+[ext_resource type="PackedScene" uid="uid://bd761oijfcgrh" path="res://godot_assets/tiles/flower_purpleB.glb" id="117_kgsmy"]
+[ext_resource type="PackedScene" uid="uid://bmnoiysuup0du" path="res://godot_assets/tiles/flower_purpleC.glb" id="118_6y1p7"]
+[ext_resource type="PackedScene" uid="uid://b35bhxvuqvw0n" path="res://godot_assets/tiles/flower_redA.glb" id="119_1gc3k"]
+[ext_resource type="PackedScene" uid="uid://d2cfcad2wqo4b" path="res://godot_assets/tiles/flower_redB.glb" id="120_24apo"]
+[ext_resource type="PackedScene" uid="uid://gjr0fjbdiphl" path="res://godot_assets/tiles/flower_redC.glb" id="121_q3i6o"]
+[ext_resource type="PackedScene" uid="uid://2ininrexcnkd" path="res://godot_assets/tiles/flower_yellowA.glb" id="122_ybqyv"]
+[ext_resource type="PackedScene" uid="uid://b0wajn2ct15sg" path="res://godot_assets/tiles/flower_yellowB.glb" id="123_p5g6e"]
+[ext_resource type="PackedScene" uid="uid://bmpausblhx1jf" path="res://godot_assets/tiles/flower_yellowC.glb" id="124_77bp1"]
+[ext_resource type="PackedScene" uid="uid://3qqynsooitsu" path="res://godot_assets/tiles/grass.glb" id="125_01rcq"]
+[ext_resource type="PackedScene" uid="uid://doy5mfv3qvffu" path="res://godot_assets/tiles/grass_large.glb" id="126_vewyj"]
+[ext_resource type="PackedScene" uid="uid://cqi1rjrm476l7" path="res://godot_assets/tiles/grass_leafs.glb" id="127_l5x5x"]
+[ext_resource type="PackedScene" uid="uid://hjucm46aujxj" path="res://godot_assets/tiles/grass_leafsLarge.glb" id="128_rsddj"]
+[ext_resource type="PackedScene" uid="uid://b7kqdkorp1o7x" path="res://godot_assets/tiles/ground_grass.glb" id="129_ikmab"]
+[ext_resource type="PackedScene" uid="uid://ctfpttl62cx8h" path="res://godot_assets/tiles/ground_pathBend.glb" id="130_sqose"]
+[ext_resource type="PackedScene" uid="uid://cctjgxlnq6iwo" path="res://godot_assets/tiles/ground_pathBendBank.glb" id="131_0jvx0"]
+[ext_resource type="PackedScene" uid="uid://dx34yop8ssess" path="res://godot_assets/tiles/ground_pathCorner.glb" id="132_ocm51"]
+[ext_resource type="PackedScene" uid="uid://dcrdnmea2euvi" path="res://godot_assets/tiles/ground_pathCornerSmall.glb" id="133_htsw2"]
+[ext_resource type="PackedScene" uid="uid://b6nut7w5q3u8r" path="res://godot_assets/tiles/ground_pathCross.glb" id="134_eitg1"]
+[ext_resource type="PackedScene" uid="uid://ckhnqtgm2n46u" path="res://godot_assets/tiles/ground_pathEnd.glb" id="135_621xg"]
+[ext_resource type="PackedScene" uid="uid://benm0ld3aasjs" path="res://godot_assets/tiles/ground_pathEndClosed.glb" id="136_ba5hn"]
+[ext_resource type="PackedScene" uid="uid://65nhe4d0520g" path="res://godot_assets/tiles/ground_pathOpen.glb" id="137_715e2"]
+[ext_resource type="PackedScene" uid="uid://ch1ytodsv1q1b" path="res://godot_assets/tiles/ground_pathRocks.glb" id="138_asxx6"]
+[ext_resource type="PackedScene" uid="uid://bpr4ui81ll3gd" path="res://godot_assets/tiles/ground_pathSide.glb" id="139_0754c"]
+[ext_resource type="PackedScene" uid="uid://bxf2r60cr1ixc" path="res://godot_assets/tiles/ground_pathSideOpen.glb" id="140_x5p4v"]
+[ext_resource type="PackedScene" uid="uid://c01tu6udqnlmy" path="res://godot_assets/tiles/ground_pathSplit.glb" id="141_oohb2"]
+[ext_resource type="PackedScene" uid="uid://pmugnqgdf2mb" path="res://godot_assets/tiles/ground_pathStraight.glb" id="142_k3qwv"]
+[ext_resource type="PackedScene" uid="uid://c082jxjsoddgn" path="res://godot_assets/tiles/ground_pathTile.glb" id="143_3cke6"]
+[ext_resource type="PackedScene" uid="uid://b1he3p1dfmt64" path="res://godot_assets/tiles/ground_riverBend.glb" id="144_odsb4"]
+[ext_resource type="PackedScene" uid="uid://cf7oxfh0s0ray" path="res://godot_assets/tiles/ground_riverBendBank.glb" id="145_o57bh"]
+[ext_resource type="PackedScene" uid="uid://gqkom6nbo0pn" path="res://godot_assets/tiles/ground_riverCorner.glb" id="146_tsg6a"]
+[ext_resource type="PackedScene" uid="uid://bql68rxvcqt4t" path="res://godot_assets/tiles/ground_riverCornerSmall.glb" id="147_oig1w"]
+[ext_resource type="PackedScene" uid="uid://4kd0t3u2ydfk" path="res://godot_assets/tiles/ground_riverCross.glb" id="148_7b1am"]
+[ext_resource type="PackedScene" uid="uid://u0k0oh6kofvg" path="res://godot_assets/tiles/ground_riverEnd.glb" id="149_ldjtx"]
+[ext_resource type="PackedScene" uid="uid://b8sffodf5jh3b" path="res://godot_assets/tiles/ground_riverEndClosed.glb" id="150_cmyvk"]
+[ext_resource type="PackedScene" uid="uid://bwkfqmjy11fvg" path="res://godot_assets/tiles/ground_riverOpen.glb" id="151_cd1le"]
+[ext_resource type="PackedScene" uid="uid://b4mreakvjwet8" path="res://godot_assets/tiles/ground_riverRocks.glb" id="152_51bkd"]
+[ext_resource type="PackedScene" uid="uid://chdrftvhpjbkr" path="res://godot_assets/tiles/ground_riverSide.glb" id="153_osap6"]
+[ext_resource type="PackedScene" uid="uid://dft551fyngsvb" path="res://godot_assets/tiles/ground_riverSideOpen.glb" id="154_doffb"]
+[ext_resource type="PackedScene" uid="uid://bnbhad6qct80i" path="res://godot_assets/tiles/ground_riverSplit.glb" id="155_pubkx"]
+[ext_resource type="PackedScene" uid="uid://bp0em2gel1sk" path="res://godot_assets/tiles/ground_riverStraight.glb" id="156_apmhr"]
+[ext_resource type="PackedScene" uid="uid://df7sotnymbqde" path="res://godot_assets/tiles/ground_riverTile.glb" id="157_i13l4"]
+[ext_resource type="PackedScene" uid="uid://c1078bspolvlb" path="res://godot_assets/tiles/hanging_moss.glb" id="158_poxm8"]
+[ext_resource type="PackedScene" uid="uid://bufbanx30061a" path="res://godot_assets/tiles/lily_large.glb" id="159_sxgst"]
+[ext_resource type="PackedScene" uid="uid://c2tmbbbu5o770" path="res://godot_assets/tiles/lily_small.glb" id="160_dsm3t"]
+[ext_resource type="PackedScene" uid="uid://bcwuemyv2dbjl" path="res://godot_assets/tiles/log.glb" id="161_88jqf"]
+[ext_resource type="PackedScene" uid="uid://b8bly53mjjx8r" path="res://godot_assets/tiles/log_large.glb" id="162_4v0qj"]
+[ext_resource type="PackedScene" uid="uid://cyt2amgt7xtj2" path="res://godot_assets/tiles/log_stack.glb" id="163_55qau"]
+[ext_resource type="PackedScene" uid="uid://ceaht80y20nub" path="res://godot_assets/tiles/log_stackLarge.glb" id="164_ypnjy"]
+[ext_resource type="PackedScene" uid="uid://cer5g4ui7ccot" path="res://godot_assets/tiles/mushroom_red.glb" id="165_w0pp1"]
+[ext_resource type="PackedScene" uid="uid://bg0hr7ebixgyp" path="res://godot_assets/tiles/mushroom_redGroup.glb" id="166_kdbog"]
+[ext_resource type="PackedScene" uid="uid://bbe1lwlqvqfk6" path="res://godot_assets/tiles/mushroom_redTall.glb" id="167_cjowl"]
+[ext_resource type="PackedScene" uid="uid://lly54wgdemwl" path="res://godot_assets/tiles/mushroom_tan.glb" id="168_qyclf"]
+[ext_resource type="PackedScene" uid="uid://cpowf5j7chxnp" path="res://godot_assets/tiles/mushroom_tanGroup.glb" id="169_jtxan"]
+[ext_resource type="PackedScene" uid="uid://du6hlpwj5mvrw" path="res://godot_assets/tiles/mushroom_tanTall.glb" id="170_jyyq0"]
+[ext_resource type="PackedScene" uid="uid://x3x8wkqo8yjb" path="res://godot_assets/tiles/path_stone.glb" id="171_xirys"]
+[ext_resource type="PackedScene" uid="uid://dy5enesgag4ji" path="res://godot_assets/tiles/path_stoneCircle.glb" id="172_a4672"]
+[ext_resource type="PackedScene" uid="uid://i6ram1es24jl" path="res://godot_assets/tiles/path_stoneCorner.glb" id="173_0fqpc"]
+[ext_resource type="PackedScene" uid="uid://nk8ajdo1o4tc" path="res://godot_assets/tiles/path_stoneEnd.glb" id="174_xmmny"]
+[ext_resource type="PackedScene" uid="uid://dvmi61ku57co0" path="res://godot_assets/tiles/path_wood.glb" id="175_7ei43"]
+[ext_resource type="PackedScene" uid="uid://ch05mwqhv0x5p" path="res://godot_assets/tiles/path_woodCorner.glb" id="176_76a5f"]
+[ext_resource type="PackedScene" uid="uid://0fbyrfe1le05" path="res://godot_assets/tiles/path_woodEnd.glb" id="177_5b8ph"]
+[ext_resource type="PackedScene" uid="uid://babs2ndx1m2ou" path="res://godot_assets/tiles/plant_bush.glb" id="178_kotfp"]
+[ext_resource type="PackedScene" uid="uid://u42cgcd0cxj4" path="res://godot_assets/tiles/plant_bushDetailed.glb" id="179_6tk2t"]
+[ext_resource type="PackedScene" uid="uid://kmjmenv4p3w5" path="res://godot_assets/tiles/plant_bushLarge.glb" id="180_dxpyx"]
+[ext_resource type="PackedScene" uid="uid://c7gtjowwrd7xd" path="res://godot_assets/tiles/plant_bushLargeTriangle.glb" id="181_c6a1q"]
+[ext_resource type="PackedScene" uid="uid://nj77x3wyle35" path="res://godot_assets/tiles/plant_bushSmall.glb" id="182_cipf0"]
+[ext_resource type="PackedScene" uid="uid://begghuvjhnfci" path="res://godot_assets/tiles/plant_bushTriangle.glb" id="183_g4ift"]
+[ext_resource type="PackedScene" uid="uid://dxdun24fwc5ea" path="res://godot_assets/tiles/plant_flatShort.glb" id="184_40nd2"]
+[ext_resource type="PackedScene" uid="uid://u2x6wces1cxi" path="res://godot_assets/tiles/plant_flatTall.glb" id="185_da7qf"]
+[ext_resource type="PackedScene" uid="uid://bfakx5gmsh3kq" path="res://godot_assets/tiles/platform_beach.glb" id="186_tsekb"]
+[ext_resource type="PackedScene" uid="uid://clyjliynrg585" path="res://godot_assets/tiles/platform_grass.glb" id="187_7453d"]
+[ext_resource type="PackedScene" uid="uid://ckhffv4anwouq" path="res://godot_assets/tiles/platform_stone.glb" id="188_8cvac"]
+[ext_resource type="PackedScene" uid="uid://dvm2aj7q648q4" path="res://godot_assets/tiles/pot_large.glb" id="189_kprx2"]
+[ext_resource type="PackedScene" uid="uid://cag1bv5yly7ou" path="res://godot_assets/tiles/pot_small.glb" id="190_ud8ja"]
+[ext_resource type="PackedScene" uid="uid://d4fqgwuvhdhtg" path="res://godot_assets/tiles/rock_largeA.glb" id="191_dbth1"]
+[ext_resource type="PackedScene" uid="uid://bcqp5164ta57" path="res://godot_assets/tiles/rock_largeB.glb" id="192_43dq8"]
+[ext_resource type="PackedScene" uid="uid://e8gnqag5c47w" path="res://godot_assets/tiles/rock_largeC.glb" id="193_a78rm"]
+[ext_resource type="PackedScene" uid="uid://c4if847eapj3" path="res://godot_assets/tiles/rock_largeD.glb" id="194_h88to"]
+[ext_resource type="PackedScene" uid="uid://ywx0ijnphn5n" path="res://godot_assets/tiles/rock_largeE.glb" id="195_qocxy"]
+[ext_resource type="PackedScene" uid="uid://crgflhjmi36ky" path="res://godot_assets/tiles/rock_largeF.glb" id="196_t1jvj"]
+[ext_resource type="PackedScene" uid="uid://bmuyejqb353l0" path="res://godot_assets/tiles/rock_smallA.glb" id="197_pg7mn"]
+[ext_resource type="PackedScene" uid="uid://bceyxs5ms7cri" path="res://godot_assets/tiles/rock_smallB.glb" id="198_84lq0"]
+[ext_resource type="PackedScene" uid="uid://bex1vg10ssnh0" path="res://godot_assets/tiles/rock_smallC.glb" id="199_m0ouu"]
+[ext_resource type="PackedScene" uid="uid://dhh30opomje88" path="res://godot_assets/tiles/rock_smallD.glb" id="200_hski1"]
+[ext_resource type="PackedScene" uid="uid://sg05d3oai0ly" path="res://godot_assets/tiles/rock_smallE.glb" id="201_gd2vp"]
+[ext_resource type="PackedScene" uid="uid://b77hx2nmu4w5u" path="res://godot_assets/tiles/rock_smallF.glb" id="202_vq0jl"]
+[ext_resource type="PackedScene" uid="uid://c4mo0ynrg1rsx" path="res://godot_assets/tiles/rock_smallFlatA.glb" id="203_b8rxu"]
+[ext_resource type="PackedScene" uid="uid://biw0jhsp6yj1d" path="res://godot_assets/tiles/rock_smallFlatB.glb" id="204_omekg"]
+[ext_resource type="PackedScene" uid="uid://bcrt103bbn1kb" path="res://godot_assets/tiles/rock_smallFlatC.glb" id="205_6aojr"]
+[ext_resource type="PackedScene" uid="uid://4naa6f6qlv0w" path="res://godot_assets/tiles/rock_smallG.glb" id="206_lb37y"]
+[ext_resource type="PackedScene" uid="uid://bqqc6dfkox222" path="res://godot_assets/tiles/rock_smallH.glb" id="207_u8cr7"]
+[ext_resource type="PackedScene" uid="uid://dsm5l6evscgah" path="res://godot_assets/tiles/rock_smallI.glb" id="208_pgb2p"]
+[ext_resource type="PackedScene" uid="uid://nsxg6iy0jxs7" path="res://godot_assets/tiles/rock_smallTopA.glb" id="209_ur02q"]
+[ext_resource type="PackedScene" uid="uid://on3ttd3y8yyj" path="res://godot_assets/tiles/rock_smallTopB.glb" id="210_odm30"]
+[ext_resource type="PackedScene" uid="uid://cm4ohyptat651" path="res://godot_assets/tiles/rock_tallA.glb" id="211_3vjkq"]
+[ext_resource type="PackedScene" uid="uid://dnh1ngvk32x85" path="res://godot_assets/tiles/rock_tallB.glb" id="212_4x2nj"]
+[ext_resource type="PackedScene" uid="uid://bl4q1aqtrxjqc" path="res://godot_assets/tiles/rock_tallC.glb" id="213_5eggs"]
+[ext_resource type="PackedScene" uid="uid://dmfcn0hshsnux" path="res://godot_assets/tiles/rock_tallD.glb" id="214_nw0s6"]
+[ext_resource type="PackedScene" uid="uid://c8sg6juk1uh7u" path="res://godot_assets/tiles/rock_tallE.glb" id="215_5wt51"]
+[ext_resource type="PackedScene" uid="uid://conty6tlejb5j" path="res://godot_assets/tiles/rock_tallF.glb" id="216_crmaf"]
+[ext_resource type="PackedScene" uid="uid://bxup35ru21twl" path="res://godot_assets/tiles/rock_tallG.glb" id="217_ju58c"]
+[ext_resource type="PackedScene" uid="uid://cb0crqj3u5qw2" path="res://godot_assets/tiles/rock_tallH.glb" id="218_1yhph"]
+[ext_resource type="PackedScene" uid="uid://blesray61by57" path="res://godot_assets/tiles/rock_tallI.glb" id="219_71qje"]
+[ext_resource type="PackedScene" uid="uid://dk55q0km22tyf" path="res://godot_assets/tiles/rock_tallJ.glb" id="220_ohh8n"]
+[ext_resource type="PackedScene" uid="uid://dvt7blt5kllns" path="res://godot_assets/tiles/sign.glb" id="221_eijk8"]
+[ext_resource type="PackedScene" uid="uid://capo3vo7tk5qx" path="res://godot_assets/tiles/statue_block.glb" id="222_feqme"]
+[ext_resource type="PackedScene" uid="uid://dlnro63k3vsjp" path="res://godot_assets/tiles/statue_column.glb" id="223_pvj8r"]
+[ext_resource type="PackedScene" uid="uid://2cwepjfqu7yp" path="res://godot_assets/tiles/statue_columnDamaged.glb" id="224_8egge"]
+[ext_resource type="PackedScene" uid="uid://deggn4jejo6nv" path="res://godot_assets/tiles/statue_head.glb" id="225_4to4a"]
+[ext_resource type="PackedScene" uid="uid://dani77g4tkl7v" path="res://godot_assets/tiles/statue_obelisk.glb" id="226_dmypa"]
+[ext_resource type="PackedScene" uid="uid://ome4fk3xgbqh" path="res://godot_assets/tiles/statue_ring.glb" id="227_46eoq"]
+[ext_resource type="PackedScene" uid="uid://ce4unhk7du5wl" path="res://godot_assets/tiles/stone_largeA.glb" id="228_8fi15"]
+[ext_resource type="PackedScene" uid="uid://ebbt84vjgapf" path="res://godot_assets/tiles/stone_largeB.glb" id="229_ndx7f"]
+[ext_resource type="PackedScene" uid="uid://wr0cpn4ofwwm" path="res://godot_assets/tiles/stone_largeC.glb" id="230_8qt6t"]
+[ext_resource type="PackedScene" uid="uid://b3yycroqcle3e" path="res://godot_assets/tiles/stone_largeD.glb" id="231_ha3ux"]
+[ext_resource type="PackedScene" uid="uid://cyrves7hlw5dw" path="res://godot_assets/tiles/stone_largeE.glb" id="232_fydva"]
+[ext_resource type="PackedScene" uid="uid://drfgrq5kcnk6b" path="res://godot_assets/tiles/stone_largeF.glb" id="233_pycrh"]
+[ext_resource type="PackedScene" uid="uid://v1ywp1xadhu3" path="res://godot_assets/tiles/stone_smallA.glb" id="234_ilm6k"]
+[ext_resource type="PackedScene" uid="uid://brhdavhuted57" path="res://godot_assets/tiles/stone_smallB.glb" id="235_08r84"]
+[ext_resource type="PackedScene" uid="uid://bob1lhgtxg5s7" path="res://godot_assets/tiles/stone_smallC.glb" id="236_ln5ur"]
+[ext_resource type="PackedScene" uid="uid://em1k5gi1mj2n" path="res://godot_assets/tiles/stone_smallD.glb" id="237_mbhl8"]
+[ext_resource type="PackedScene" uid="uid://cnp5trsdcs8g2" path="res://godot_assets/tiles/stone_smallE.glb" id="238_6k7vv"]
+[ext_resource type="PackedScene" uid="uid://b3q7aa2pgw8p6" path="res://godot_assets/tiles/stone_smallF.glb" id="239_it8mx"]
+[ext_resource type="PackedScene" uid="uid://b15or8ph0eg0w" path="res://godot_assets/tiles/stone_smallFlatA.glb" id="240_pn33f"]
+[ext_resource type="PackedScene" uid="uid://biwiqwxo2xa15" path="res://godot_assets/tiles/stone_smallFlatB.glb" id="241_msmu8"]
+[ext_resource type="PackedScene" uid="uid://1esm7j42x5y5" path="res://godot_assets/tiles/stone_smallFlatC.glb" id="242_yuk6a"]
+[ext_resource type="PackedScene" uid="uid://d3ocrpj4ll75x" path="res://godot_assets/tiles/stone_smallG.glb" id="243_kbdin"]
+[ext_resource type="PackedScene" uid="uid://cfx1qd50pr6ai" path="res://godot_assets/tiles/stone_smallH.glb" id="244_6pxwu"]
+[ext_resource type="PackedScene" uid="uid://vmletanb8ddl" path="res://godot_assets/tiles/stone_smallI.glb" id="245_4wf4h"]
+[ext_resource type="PackedScene" uid="uid://cp1id5qe8a2hq" path="res://godot_assets/tiles/stone_smallTopA.glb" id="246_vxt1f"]
+[ext_resource type="PackedScene" uid="uid://cp6a47endk6r4" path="res://godot_assets/tiles/stone_smallTopB.glb" id="247_sytnh"]
+[ext_resource type="PackedScene" uid="uid://tvd4vjq2rpr2" path="res://godot_assets/tiles/stone_tallA.glb" id="248_clous"]
+[ext_resource type="PackedScene" uid="uid://ct58xdswnffq5" path="res://godot_assets/tiles/stone_tallB.glb" id="249_t3cea"]
+[ext_resource type="PackedScene" uid="uid://b0r3hv2hkh2jg" path="res://godot_assets/tiles/stone_tallC.glb" id="250_pqrhx"]
+[ext_resource type="PackedScene" uid="uid://dbbw5r6fjm5kh" path="res://godot_assets/tiles/stone_tallD.glb" id="251_mkf38"]
+[ext_resource type="PackedScene" uid="uid://by68spv6pdeyx" path="res://godot_assets/tiles/stone_tallE.glb" id="252_hrtw8"]
+[ext_resource type="PackedScene" uid="uid://clodhseobxlwg" path="res://godot_assets/tiles/stone_tallF.glb" id="253_beb0k"]
+[ext_resource type="PackedScene" uid="uid://rgs4n7rbcrxo" path="res://godot_assets/tiles/stone_tallG.glb" id="254_87u80"]
+[ext_resource type="PackedScene" uid="uid://byfn8ule0flcs" path="res://godot_assets/tiles/stone_tallH.glb" id="255_tmrgi"]
+[ext_resource type="PackedScene" uid="uid://s2yc8e3vvfyw" path="res://godot_assets/tiles/stone_tallI.glb" id="256_u3bns"]
+[ext_resource type="PackedScene" uid="uid://cwdnd4ftdeiro" path="res://godot_assets/tiles/stone_tallJ.glb" id="257_ydb05"]
+[ext_resource type="PackedScene" uid="uid://dn7ihe0sfdlbx" path="res://godot_assets/tiles/stump_old.glb" id="258_5qxi0"]
+[ext_resource type="PackedScene" uid="uid://cfek6yt2pbxjo" path="res://godot_assets/tiles/stump_oldTall.glb" id="259_1nden"]
+[ext_resource type="PackedScene" uid="uid://bjearcw60yuw8" path="res://godot_assets/tiles/stump_round.glb" id="260_klo6j"]
+[ext_resource type="PackedScene" uid="uid://d18r7eloc8ui8" path="res://godot_assets/tiles/stump_roundDetailed.glb" id="261_5mc1m"]
+[ext_resource type="PackedScene" uid="uid://bpicxfjyyod8g" path="res://godot_assets/tiles/stump_square.glb" id="262_ojrs3"]
+[ext_resource type="PackedScene" uid="uid://dl0ufbg0wgucu" path="res://godot_assets/tiles/stump_squareDetailed.glb" id="263_fq1fo"]
+[ext_resource type="PackedScene" uid="uid://dqs6qgv0x6qm1" path="res://godot_assets/tiles/stump_squareDetailedWide.glb" id="264_44l5x"]
+[ext_resource type="PackedScene" uid="uid://fdd7crhj30eu" path="res://godot_assets/tiles/tent_detailedClosed.glb" id="265_vefw3"]
+[ext_resource type="PackedScene" uid="uid://cjfdfnxeqbv7g" path="res://godot_assets/tiles/tent_detailedOpen.glb" id="266_jv8nu"]
+[ext_resource type="PackedScene" uid="uid://usi101s74e6j" path="res://godot_assets/tiles/tent_smallClosed.glb" id="267_12n3l"]
+[ext_resource type="PackedScene" uid="uid://cnr15wvwq7ocu" path="res://godot_assets/tiles/tent_smallOpen.glb" id="268_jg0gp"]
+[ext_resource type="PackedScene" uid="uid://2lm4rk0hxrbc" path="res://godot_assets/tiles/tree_blocks.glb" id="269_1aao0"]
+[ext_resource type="PackedScene" uid="uid://rpg6md0ho66e" path="res://godot_assets/tiles/tree_blocks_dark.glb" id="270_3akig"]
+[ext_resource type="PackedScene" uid="uid://c6sl1cqnu0lai" path="res://godot_assets/tiles/tree_blocks_fall.glb" id="271_pv30b"]
+[ext_resource type="PackedScene" uid="uid://cu1usl21m5dgb" path="res://godot_assets/tiles/tree_cone.glb" id="272_ej5yh"]
+[ext_resource type="PackedScene" uid="uid://dbhqqcadmmqkc" path="res://godot_assets/tiles/tree_cone_dark.glb" id="273_ylvv0"]
+[ext_resource type="PackedScene" uid="uid://brw0jl0ikjaaa" path="res://godot_assets/tiles/tree_cone_fall.glb" id="274_vypr5"]
+[ext_resource type="PackedScene" uid="uid://duicfxcwsdq07" path="res://godot_assets/tiles/tree_default.glb" id="275_fg2ih"]
+[ext_resource type="PackedScene" uid="uid://cbxwhfact40k2" path="res://godot_assets/tiles/tree_default_dark.glb" id="276_qamqa"]
+[ext_resource type="PackedScene" uid="uid://fwgyycmro3u4" path="res://godot_assets/tiles/tree_default_fall.glb" id="277_0b7e1"]
+[ext_resource type="PackedScene" uid="uid://cb5p77xtd87mr" path="res://godot_assets/tiles/tree_detailed.glb" id="278_m3gtv"]
+[ext_resource type="PackedScene" uid="uid://cyfkk8nnecovc" path="res://godot_assets/tiles/tree_detailed_dark.glb" id="279_5mpc2"]
+[ext_resource type="PackedScene" uid="uid://cxs7ayhc3u5en" path="res://godot_assets/tiles/tree_detailed_fall.glb" id="280_irav2"]
+[ext_resource type="PackedScene" uid="uid://brivmfdmgo5rf" path="res://godot_assets/tiles/tree_fat.glb" id="281_ytgl7"]
+[ext_resource type="PackedScene" uid="uid://c6l6pc07fd2y3" path="res://godot_assets/tiles/tree_fat_darkh.glb" id="282_7x6mm"]
+[ext_resource type="PackedScene" uid="uid://bjs3oxsu716y" path="res://godot_assets/tiles/tree_fat_fall.glb" id="283_mfmpg"]
+[ext_resource type="PackedScene" uid="uid://c0amyu5ghls1s" path="res://godot_assets/tiles/tree_oak.glb" id="284_bjteg"]
+[ext_resource type="PackedScene" uid="uid://bkusu8f0skeaf" path="res://godot_assets/tiles/tree_oak_dark.glb" id="285_tqqel"]
+[ext_resource type="PackedScene" uid="uid://btpfdlwsfuqhx" path="res://godot_assets/tiles/tree_oak_fall.glb" id="286_u7lgc"]
+[ext_resource type="PackedScene" uid="uid://bes3pxewjaalt" path="res://godot_assets/tiles/tree_palm.glb" id="287_1c4bo"]
+[ext_resource type="PackedScene" uid="uid://cvp1an3is0kna" path="res://godot_assets/tiles/tree_palmBend.glb" id="288_ch8ry"]
+[ext_resource type="PackedScene" uid="uid://cb6nchaor7wec" path="res://godot_assets/tiles/tree_palmDetailedShort.glb" id="289_kovi1"]
+[ext_resource type="PackedScene" uid="uid://dbukj5lp3io05" path="res://godot_assets/tiles/tree_palmDetailedTall.glb" id="290_p3tbu"]
+[ext_resource type="PackedScene" uid="uid://dy6q7s22c0tbj" path="res://godot_assets/tiles/tree_palmShort.glb" id="291_nvhew"]
+[ext_resource type="PackedScene" uid="uid://bextd3nl1m0i8" path="res://godot_assets/tiles/tree_palmTall.glb" id="292_5uhoq"]
+[ext_resource type="PackedScene" uid="uid://bmxahb8qkxe53" path="res://godot_assets/tiles/tree_pineDefaultA.glb" id="293_4wna1"]
+[ext_resource type="PackedScene" uid="uid://o0bxia6rfh7g" path="res://godot_assets/tiles/tree_pineDefaultB.glb" id="294_3lnpr"]
+[ext_resource type="PackedScene" uid="uid://bjcvwrswbmvx7" path="res://godot_assets/tiles/tree_pineGroundA.glb" id="295_4du7s"]
+[ext_resource type="PackedScene" uid="uid://bsx6n7ludfmlr" path="res://godot_assets/tiles/tree_pineGroundB.glb" id="296_oc121"]
+[ext_resource type="PackedScene" uid="uid://vxqdsx4y0ia2" path="res://godot_assets/tiles/tree_pineRoundA.glb" id="297_pjmvk"]
+[ext_resource type="PackedScene" uid="uid://bb1k1o4cav1bv" path="res://godot_assets/tiles/tree_pineRoundB.glb" id="298_w6q1g"]
+[ext_resource type="PackedScene" uid="uid://drypakl375bk8" path="res://godot_assets/tiles/tree_pineRoundC.glb" id="299_jn7kd"]
+[ext_resource type="PackedScene" uid="uid://b6uf0phf6uuan" path="res://godot_assets/tiles/tree_pineRoundD.glb" id="300_5gueb"]
+[ext_resource type="PackedScene" uid="uid://2ckej3alf75n" path="res://godot_assets/tiles/tree_pineRoundE.glb" id="301_y6hjv"]
+[ext_resource type="PackedScene" uid="uid://cnxyy4aqtwjm3" path="res://godot_assets/tiles/tree_pineRoundF.glb" id="302_7fux8"]
+[ext_resource type="PackedScene" uid="uid://dvtov8o6f8hrp" path="res://godot_assets/tiles/tree_pineSmallA.glb" id="303_y6q2h"]
+[ext_resource type="PackedScene" uid="uid://b32j6y5a2afjl" path="res://godot_assets/tiles/tree_pineSmallB.glb" id="304_h04jy"]
+[ext_resource type="PackedScene" uid="uid://gbqxme4vijdn" path="res://godot_assets/tiles/tree_pineSmallC.glb" id="305_nlop1"]
+[ext_resource type="PackedScene" uid="uid://olevu7542c5d" path="res://godot_assets/tiles/tree_pineSmallD.glb" id="306_tt6f1"]
+[ext_resource type="PackedScene" uid="uid://c5hdpmwmennyq" path="res://godot_assets/tiles/tree_pineTallA.glb" id="307_8h554"]
+[ext_resource type="PackedScene" uid="uid://bykcsh6xw6y5t" path="res://godot_assets/tiles/tree_pineTallA_detailed.glb" id="308_6thx4"]
+[ext_resource type="PackedScene" uid="uid://b8mg2ib61vx3w" path="res://godot_assets/tiles/tree_pineTallB.glb" id="309_b52d0"]
+[ext_resource type="PackedScene" uid="uid://6kaisd8uy1p3" path="res://godot_assets/tiles/tree_pineTallB_detailed.glb" id="310_hcpdq"]
+[ext_resource type="PackedScene" uid="uid://cwpl487s6kjh7" path="res://godot_assets/tiles/tree_pineTallC.glb" id="311_iudhu"]
+[ext_resource type="PackedScene" uid="uid://cq43mu2n057t7" path="res://godot_assets/tiles/tree_pineTallC_detailed.glb" id="312_ek6yl"]
+[ext_resource type="PackedScene" uid="uid://cql6cp34thjsi" path="res://godot_assets/tiles/tree_pineTallD.glb" id="313_7d0kp"]
+[ext_resource type="PackedScene" uid="uid://bcwy0kdpfbds4" path="res://godot_assets/tiles/tree_pineTallD_detailed.glb" id="314_ax5bg"]
+[ext_resource type="PackedScene" uid="uid://c0ndl1pxdyk3c" path="res://godot_assets/tiles/tree_plateau.glb" id="315_782x3"]
+[ext_resource type="PackedScene" uid="uid://cdlub83us6ynu" path="res://godot_assets/tiles/tree_plateau_dark.glb" id="316_llsed"]
+[ext_resource type="PackedScene" uid="uid://bush2j5fl3ker" path="res://godot_assets/tiles/tree_plateau_fall.glb" id="317_lghny"]
+[ext_resource type="PackedScene" uid="uid://n12arrxwkxa8" path="res://godot_assets/tiles/tree_simple.glb" id="318_o142o"]
+[ext_resource type="PackedScene" uid="uid://dh14t2eeh0hax" path="res://godot_assets/tiles/tree_simple_dark.glb" id="319_c6bgy"]
+[ext_resource type="PackedScene" uid="uid://bqi6pexdqql77" path="res://godot_assets/tiles/tree_simple_fall.glb" id="320_aniy3"]
+[ext_resource type="PackedScene" uid="uid://b6s3kq2xffbua" path="res://godot_assets/tiles/tree_small.glb" id="321_7bwr0"]
+[ext_resource type="PackedScene" uid="uid://cio3lkhqag162" path="res://godot_assets/tiles/tree_small_dark.glb" id="322_l1xg2"]
+[ext_resource type="PackedScene" uid="uid://dsmdvqa4o0ttg" path="res://godot_assets/tiles/tree_small_fall.glb" id="323_26p0a"]
+[ext_resource type="PackedScene" uid="uid://d25vp2utqloj1" path="res://godot_assets/tiles/tree_tall.glb" id="324_dxee0"]
+[ext_resource type="PackedScene" uid="uid://cff556gb5uaxo" path="res://godot_assets/tiles/tree_tall_dark.glb" id="325_01yu3"]
+[ext_resource type="PackedScene" uid="uid://uhhvb85suy4y" path="res://godot_assets/tiles/tree_tall_fall.glb" id="326_ur4dt"]
+[ext_resource type="PackedScene" uid="uid://dlnprtefje5r3" path="res://godot_assets/tiles/tree_thin.glb" id="327_v1xjq"]
+[ext_resource type="PackedScene" uid="uid://dhjea0tvpdkyx" path="res://godot_assets/tiles/tree_thin_dark.glb" id="328_gmi8w"]
+[ext_resource type="PackedScene" uid="uid://b87lkwix0ca" path="res://godot_assets/tiles/tree_thin_fall.glb" id="329_o5yu0"]
+
+[node name="TileLibrary" type="Node3D"]
+
+[node name="bed2" parent="." instance=ExtResource("1_6gye2")]
+
+[node name="bed_floor2" parent="." instance=ExtResource("2_d80uj")]
+
+[node name="bridge_center_stone2" parent="." instance=ExtResource("3_tcv0c")]
+
+[node name="bridge_center_stoneRound2" parent="." instance=ExtResource("4_y0ab2")]
+
+[node name="bridge_center_wood2" parent="." instance=ExtResource("5_560wf")]
+
+[node name="bridge_center_woodRound2" parent="." instance=ExtResource("6_er2mj")]
+
+[node name="bridge_side_stone2" parent="." instance=ExtResource("7_mng2w")]
+
+[node name="bridge_side_stoneRound2" parent="." instance=ExtResource("8_vpyix")]
+
+[node name="bridge_side_wood2" parent="." instance=ExtResource("9_ru5q2")]
+
+[node name="bridge_side_woodRound2" parent="." instance=ExtResource("10_gi2td")]
+
+[node name="bridge_stone2" parent="." instance=ExtResource("11_hgjyc")]
+
+[node name="bridge_stoneNarrow2" parent="." instance=ExtResource("12_ys4h5")]
+
+[node name="bridge_stoneRound2" parent="." instance=ExtResource("13_6jtue")]
+
+[node name="bridge_stoneRoundNarrow2" parent="." instance=ExtResource("14_horeu")]
+
+[node name="bridge_wood2" parent="." instance=ExtResource("15_vt310")]
+
+[node name="bridge_woodNarrow2" parent="." instance=ExtResource("16_gnpyg")]
+
+[node name="bridge_woodRound2" parent="." instance=ExtResource("17_ti3mx")]
+
+[node name="bridge_woodRoundNarrow2" parent="." instance=ExtResource("18_m6qyr")]
+
+[node name="cactus_short2" parent="." instance=ExtResource("19_xo4qj")]
+
+[node name="cactus_tall2" parent="." instance=ExtResource("20_s3y7q")]
+
+[node name="campfire_bricks2" parent="." instance=ExtResource("21_67c6o")]
+
+[node name="campfire_logs2" parent="." instance=ExtResource("22_pclwp")]
+
+[node name="campfire_planks2" parent="." instance=ExtResource("23_pcexn")]
+
+[node name="campfire_stones2" parent="." instance=ExtResource("24_6l6gm")]
+
+[node name="canoe2" parent="." instance=ExtResource("25_e7gwf")]
+
+[node name="canoe_paddle2" parent="." instance=ExtResource("26_mcy8r")]
+
+[node name="cliff_blockCave_rock2" parent="." instance=ExtResource("27_65kxr")]
+
+[node name="cliff_blockCave_stone2" parent="." instance=ExtResource("28_at61m")]
+
+[node name="cliff_blockDiagonal_rock2" parent="." instance=ExtResource("29_wmena")]
+
+[node name="cliff_blockDiagonal_stone2" parent="." instance=ExtResource("30_gvmvf")]
+
+[node name="cliff_blockHalf_rock2" parent="." instance=ExtResource("31_7tu0t")]
+
+[node name="cliff_blockHalf_stone2" parent="." instance=ExtResource("32_v4rth")]
+
+[node name="cliff_blockQuarter_rock2" parent="." instance=ExtResource("33_oo7jl")]
+
+[node name="cliff_blockQuarter_stone2" parent="." instance=ExtResource("34_vb0yj")]
+
+[node name="cliff_blockSlopeHalfWalls_rock2" parent="." instance=ExtResource("35_na3k5")]
+
+[node name="cliff_blockSlopeHalfWalls_stone2" parent="." instance=ExtResource("36_f5xjc")]
+
+[node name="cliff_blockSlopeWalls_rock2" parent="." instance=ExtResource("37_uc8ja")]
+
+[node name="cliff_blockSlopeWalls_stone2" parent="." instance=ExtResource("38_xtpir")]
+
+[node name="cliff_blockSlope_rock2" parent="." instance=ExtResource("39_chqdn")]
+
+[node name="cliff_blockSlope_stone2" parent="." instance=ExtResource("40_uaylc")]
+
+[node name="cliff_block_rock2" parent="." instance=ExtResource("41_svn6y")]
+
+[node name="cliff_block_stone2" parent="." instance=ExtResource("42_hajya")]
+
+[node name="cliff_cave_rock2" parent="." instance=ExtResource("43_akfyf")]
+
+[node name="cliff_cave_stone2" parent="." instance=ExtResource("44_yycdm")]
+
+[node name="cliff_cornerInnerLarge_rock2" parent="." instance=ExtResource("45_x48e8")]
+
+[node name="cliff_cornerInnerLarge_stone2" parent="." instance=ExtResource("46_kgc4c")]
+
+[node name="cliff_cornerInnerTop_rock2" parent="." instance=ExtResource("47_ydl3n")]
+
+[node name="cliff_cornerInnerTop_stone2" parent="." instance=ExtResource("48_yjcff")]
+
+[node name="cliff_cornerInner_rock2" parent="." instance=ExtResource("49_cxram")]
+
+[node name="cliff_cornerInner_stone2" parent="." instance=ExtResource("50_8rvxy")]
+
+[node name="cliff_cornerLarge_rock2" parent="." instance=ExtResource("51_3tnw1")]
+
+[node name="cliff_cornerLarge_stone2" parent="." instance=ExtResource("52_iarog")]
+
+[node name="cliff_cornerTop_rock2" parent="." instance=ExtResource("53_vq5yb")]
+
+[node name="cliff_cornerTop_stone2" parent="." instance=ExtResource("54_hig86")]
+
+[node name="cliff_corner_rock2" parent="." instance=ExtResource("55_jq71h")]
+
+[node name="cliff_corner_stone2" parent="." instance=ExtResource("56_plk15")]
+
+[node name="cliff_diagonal_rock2" parent="." instance=ExtResource("57_8x8rp")]
+
+[node name="cliff_diagonal_stone2" parent="." instance=ExtResource("58_mo5vd")]
+
+[node name="cliff_halfCornerInner_rock2" parent="." instance=ExtResource("59_cu45a")]
+
+[node name="cliff_halfCornerInner_stone2" parent="." instance=ExtResource("60_la0s7")]
+
+[node name="cliff_halfCorner_rock2" parent="." instance=ExtResource("61_7e3s5")]
+
+[node name="cliff_halfCorner_stone2" parent="." instance=ExtResource("62_u0jyt")]
+
+[node name="cliff_half_rock2" parent="." instance=ExtResource("63_rf6fx")]
+
+[node name="cliff_half_stone2" parent="." instance=ExtResource("64_tfen6")]
+
+[node name="cliff_large_rock2" parent="." instance=ExtResource("65_o24id")]
+
+[node name="cliff_large_stone2" parent="." instance=ExtResource("66_ia0gk")]
+
+[node name="cliff_rock2" parent="." instance=ExtResource("67_kspdg")]
+
+[node name="cliff_stepsCornerInner_rock2" parent="." instance=ExtResource("68_tnvk3")]
+
+[node name="cliff_stepsCornerInner_stone2" parent="." instance=ExtResource("69_jw2d4")]
+
+[node name="cliff_stepsCorner_rock2" parent="." instance=ExtResource("70_mlou6")]
+
+[node name="cliff_stepsCorner_stone2" parent="." instance=ExtResource("71_ml8ea")]
+
+[node name="cliff_steps_rock2" parent="." instance=ExtResource("72_0n8ju")]
+
+[node name="cliff_steps_stone2" parent="." instance=ExtResource("73_lsvar")]
+
+[node name="cliff_stone2" parent="." instance=ExtResource("74_v4lya")]
+
+[node name="cliff_topDiagonal_rock2" parent="." instance=ExtResource("75_ov156")]
+
+[node name="cliff_topDiagonal_stone2" parent="." instance=ExtResource("76_r2oel")]
+
+[node name="cliff_top_rock2" parent="." instance=ExtResource("77_uj4w7")]
+
+[node name="cliff_top_stone2" parent="." instance=ExtResource("78_yu3t7")]
+
+[node name="cliff_waterfallTop_rock2" parent="." instance=ExtResource("79_ku5rm")]
+
+[node name="cliff_waterfallTop_stone2" parent="." instance=ExtResource("80_j7vtv")]
+
+[node name="cliff_waterfall_rock2" parent="." instance=ExtResource("81_brtim")]
+
+[node name="cliff_waterfall_stone2" parent="." instance=ExtResource("82_g210r")]
+
+[node name="crops_bambooStageA2" parent="." instance=ExtResource("83_12nw3")]
+
+[node name="crops_bambooStageB2" parent="." instance=ExtResource("84_ba762")]
+
+[node name="crops_cornStageA2" parent="." instance=ExtResource("85_xbgmr")]
+
+[node name="crops_cornStageB2" parent="." instance=ExtResource("86_m6wr8")]
+
+[node name="crops_cornStageC2" parent="." instance=ExtResource("87_gos42")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="crops_cornStageD2" parent="." instance=ExtResource("88_gslst")]
+
+[node name="crops_dirtDoubleRow2" parent="." instance=ExtResource("89_dj385")]
+
+[node name="crops_dirtDoubleRowCorner2" parent="." instance=ExtResource("90_676hc")]
+
+[node name="crops_dirtDoubleRowEnd2" parent="." instance=ExtResource("91_7ly07")]
+
+[node name="crops_dirtRow2" parent="." instance=ExtResource("92_hyx81")]
+
+[node name="crops_dirtRowCorner2" parent="." instance=ExtResource("93_qabtn")]
+
+[node name="crops_dirtRowEnd2" parent="." instance=ExtResource("94_3xn81")]
+
+[node name="crops_dirtSingle2" parent="." instance=ExtResource("95_64cj7")]
+
+[node name="crops_leafsStageA2" parent="." instance=ExtResource("96_3f0k4")]
+
+[node name="crops_leafsStageB2" parent="." instance=ExtResource("97_jwakd")]
+
+[node name="crops_wheatStageA2" parent="." instance=ExtResource("98_5vr8p")]
+
+[node name="crops_wheatStageB2" parent="." instance=ExtResource("99_i3nkd")]
+
+[node name="crop_carrot2" parent="." instance=ExtResource("100_w5s78")]
+
+[node name="crop_melon2" parent="." instance=ExtResource("101_2y7vj")]
+
+[node name="crop_pumpkin2" parent="." instance=ExtResource("102_6njmt")]
+
+[node name="crop_turnip2" parent="." instance=ExtResource("103_4ylff")]
+
+[node name="fence_bend2" parent="." instance=ExtResource("104_2xwhp")]
+
+[node name="fence_bendCenter2" parent="." instance=ExtResource("105_jl8iv")]
+
+[node name="fence_corner2" parent="." instance=ExtResource("106_iv23r")]
+
+[node name="fence_gate2" parent="." instance=ExtResource("107_fq32n")]
+
+[node name="fence_planks2" parent="." instance=ExtResource("108_nav6j")]
+
+[node name="fence_planksDouble2" parent="." instance=ExtResource("109_qmp0r")]
+
+[node name="fence_simple2" parent="." instance=ExtResource("110_qf7ul")]
+
+[node name="fence_simpleCenter2" parent="." instance=ExtResource("111_d5bs8")]
+
+[node name="fence_simpleDiagonal2" parent="." instance=ExtResource("112_kbl0p")]
+
+[node name="fence_simpleDiagonalCenter2" parent="." instance=ExtResource("113_a472r")]
+
+[node name="fence_simpleHigh2" parent="." instance=ExtResource("114_7tcyv")]
+
+[node name="fence_simpleLow2" parent="." instance=ExtResource("115_23yfb")]
+
+[node name="flower_purpleA2" parent="." instance=ExtResource("116_1ll0r")]
+
+[node name="flower_purpleB2" parent="." instance=ExtResource("117_kgsmy")]
+
+[node name="flower_purpleC2" parent="." instance=ExtResource("118_6y1p7")]
+
+[node name="flower_redA2" parent="." instance=ExtResource("119_1gc3k")]
+
+[node name="flower_redB2" parent="." instance=ExtResource("120_24apo")]
+
+[node name="flower_redC2" parent="." instance=ExtResource("121_q3i6o")]
+
+[node name="flower_yellowA2" parent="." instance=ExtResource("122_ybqyv")]
+
+[node name="flower_yellowB2" parent="." instance=ExtResource("123_p5g6e")]
+
+[node name="flower_yellowC2" parent="." instance=ExtResource("124_77bp1")]
+
+[node name="grass2" parent="." instance=ExtResource("125_01rcq")]
+
+[node name="grass_large2" parent="." instance=ExtResource("126_vewyj")]
+
+[node name="grass_leafs2" parent="." instance=ExtResource("127_l5x5x")]
+
+[node name="grass_leafsLarge2" parent="." instance=ExtResource("128_rsddj")]
+
+[node name="ground_grass2" parent="." instance=ExtResource("129_ikmab")]
+
+[node name="ground_pathBend2" parent="." instance=ExtResource("130_sqose")]
+
+[node name="ground_pathBendBank2" parent="." instance=ExtResource("131_0jvx0")]
+
+[node name="ground_pathCorner2" parent="." instance=ExtResource("132_ocm51")]
+
+[node name="ground_pathCornerSmall2" parent="." instance=ExtResource("133_htsw2")]
+
+[node name="ground_pathCross2" parent="." instance=ExtResource("134_eitg1")]
+
+[node name="ground_pathEnd2" parent="." instance=ExtResource("135_621xg")]
+
+[node name="ground_pathEndClosed2" parent="." instance=ExtResource("136_ba5hn")]
+
+[node name="ground_pathOpen2" parent="." instance=ExtResource("137_715e2")]
+
+[node name="ground_pathRocks2" parent="." instance=ExtResource("138_asxx6")]
+
+[node name="ground_pathSide2" parent="." instance=ExtResource("139_0754c")]
+
+[node name="ground_pathSideOpen2" parent="." instance=ExtResource("140_x5p4v")]
+
+[node name="ground_pathSplit2" parent="." instance=ExtResource("141_oohb2")]
+
+[node name="ground_pathStraight2" parent="." instance=ExtResource("142_k3qwv")]
+
+[node name="ground_pathTile2" parent="." instance=ExtResource("143_3cke6")]
+
+[node name="ground_riverBend2" parent="." instance=ExtResource("144_odsb4")]
+
+[node name="ground_riverBendBank2" parent="." instance=ExtResource("145_o57bh")]
+
+[node name="ground_riverCorner2" parent="." instance=ExtResource("146_tsg6a")]
+
+[node name="ground_riverCornerSmall2" parent="." instance=ExtResource("147_oig1w")]
+
+[node name="ground_riverCross2" parent="." instance=ExtResource("148_7b1am")]
+
+[node name="ground_riverEnd2" parent="." instance=ExtResource("149_ldjtx")]
+
+[node name="ground_riverEndClosed2" parent="." instance=ExtResource("150_cmyvk")]
+
+[node name="ground_riverOpen2" parent="." instance=ExtResource("151_cd1le")]
+
+[node name="ground_riverRocks2" parent="." instance=ExtResource("152_51bkd")]
+
+[node name="ground_riverSide2" parent="." instance=ExtResource("153_osap6")]
+
+[node name="ground_riverSideOpen2" parent="." instance=ExtResource("154_doffb")]
+
+[node name="ground_riverSplit2" parent="." instance=ExtResource("155_pubkx")]
+
+[node name="ground_riverStraight2" parent="." instance=ExtResource("156_apmhr")]
+
+[node name="ground_riverTile2" parent="." instance=ExtResource("157_i13l4")]
+
+[node name="hanging_moss2" parent="." instance=ExtResource("158_poxm8")]
+
+[node name="lily_large2" parent="." instance=ExtResource("159_sxgst")]
+
+[node name="lily_small2" parent="." instance=ExtResource("160_dsm3t")]
+
+[node name="log2" parent="." instance=ExtResource("161_88jqf")]
+
+[node name="log_large2" parent="." instance=ExtResource("162_4v0qj")]
+
+[node name="log_stack2" parent="." instance=ExtResource("163_55qau")]
+
+[node name="log_stackLarge2" parent="." instance=ExtResource("164_ypnjy")]
+
+[node name="mushroom_red2" parent="." instance=ExtResource("165_w0pp1")]
+
+[node name="mushroom_redGroup2" parent="." instance=ExtResource("166_kdbog")]
+
+[node name="mushroom_redTall2" parent="." instance=ExtResource("167_cjowl")]
+
+[node name="mushroom_tan2" parent="." instance=ExtResource("168_qyclf")]
+
+[node name="mushroom_tanGroup2" parent="." instance=ExtResource("169_jtxan")]
+
+[node name="mushroom_tanTall2" parent="." instance=ExtResource("170_jyyq0")]
+
+[node name="path_stone2" parent="." instance=ExtResource("171_xirys")]
+
+[node name="path_stoneCircle2" parent="." instance=ExtResource("172_a4672")]
+
+[node name="path_stoneCorner2" parent="." instance=ExtResource("173_0fqpc")]
+
+[node name="path_stoneEnd2" parent="." instance=ExtResource("174_xmmny")]
+
+[node name="path_wood2" parent="." instance=ExtResource("175_7ei43")]
+
+[node name="path_woodCorner2" parent="." instance=ExtResource("176_76a5f")]
+
+[node name="path_woodEnd2" parent="." instance=ExtResource("177_5b8ph")]
+
+[node name="plant_bush2" parent="." instance=ExtResource("178_kotfp")]
+
+[node name="plant_bushDetailed2" parent="." instance=ExtResource("179_6tk2t")]
+
+[node name="plant_bushLarge2" parent="." instance=ExtResource("180_dxpyx")]
+
+[node name="plant_bushLargeTriangle2" parent="." instance=ExtResource("181_c6a1q")]
+
+[node name="plant_bushSmall2" parent="." instance=ExtResource("182_cipf0")]
+
+[node name="plant_bushTriangle2" parent="." instance=ExtResource("183_g4ift")]
+
+[node name="plant_flatShort2" parent="." instance=ExtResource("184_40nd2")]
+
+[node name="plant_flatTall2" parent="." instance=ExtResource("185_da7qf")]
+
+[node name="platform_beach2" parent="." instance=ExtResource("186_tsekb")]
+
+[node name="platform_grass2" parent="." instance=ExtResource("187_7453d")]
+
+[node name="platform_stone2" parent="." instance=ExtResource("188_8cvac")]
+
+[node name="pot_large2" parent="." instance=ExtResource("189_kprx2")]
+
+[node name="pot_small2" parent="." instance=ExtResource("190_ud8ja")]
+
+[node name="rock_largeA2" parent="." instance=ExtResource("191_dbth1")]
+
+[node name="rock_largeB2" parent="." instance=ExtResource("192_43dq8")]
+
+[node name="rock_largeC2" parent="." instance=ExtResource("193_a78rm")]
+
+[node name="rock_largeD2" parent="." instance=ExtResource("194_h88to")]
+
+[node name="rock_largeE2" parent="." instance=ExtResource("195_qocxy")]
+
+[node name="rock_largeF2" parent="." instance=ExtResource("196_t1jvj")]
+
+[node name="rock_smallA2" parent="." instance=ExtResource("197_pg7mn")]
+
+[node name="rock_smallB2" parent="." instance=ExtResource("198_84lq0")]
+
+[node name="rock_smallC2" parent="." instance=ExtResource("199_m0ouu")]
+
+[node name="rock_smallD2" parent="." instance=ExtResource("200_hski1")]
+
+[node name="rock_smallE2" parent="." instance=ExtResource("201_gd2vp")]
+
+[node name="rock_smallF2" parent="." instance=ExtResource("202_vq0jl")]
+
+[node name="rock_smallFlatA2" parent="." instance=ExtResource("203_b8rxu")]
+
+[node name="rock_smallFlatB2" parent="." instance=ExtResource("204_omekg")]
+
+[node name="rock_smallFlatC2" parent="." instance=ExtResource("205_6aojr")]
+
+[node name="rock_smallG2" parent="." instance=ExtResource("206_lb37y")]
+
+[node name="rock_smallH2" parent="." instance=ExtResource("207_u8cr7")]
+
+[node name="rock_smallI2" parent="." instance=ExtResource("208_pgb2p")]
+
+[node name="rock_smallTopA2" parent="." instance=ExtResource("209_ur02q")]
+
+[node name="rock_smallTopB2" parent="." instance=ExtResource("210_odm30")]
+
+[node name="rock_tallA2" parent="." instance=ExtResource("211_3vjkq")]
+
+[node name="rock_tallB2" parent="." instance=ExtResource("212_4x2nj")]
+
+[node name="rock_tallC2" parent="." instance=ExtResource("213_5eggs")]
+
+[node name="rock_tallD2" parent="." instance=ExtResource("214_nw0s6")]
+
+[node name="rock_tallE2" parent="." instance=ExtResource("215_5wt51")]
+
+[node name="rock_tallF2" parent="." instance=ExtResource("216_crmaf")]
+
+[node name="rock_tallG2" parent="." instance=ExtResource("217_ju58c")]
+
+[node name="rock_tallH2" parent="." instance=ExtResource("218_1yhph")]
+
+[node name="rock_tallI2" parent="." instance=ExtResource("219_71qje")]
+
+[node name="rock_tallJ2" parent="." instance=ExtResource("220_ohh8n")]
+
+[node name="sign2" parent="." instance=ExtResource("221_eijk8")]
+
+[node name="statue_block2" parent="." instance=ExtResource("222_feqme")]
+
+[node name="statue_column2" parent="." instance=ExtResource("223_pvj8r")]
+
+[node name="statue_columnDamaged2" parent="." instance=ExtResource("224_8egge")]
+
+[node name="statue_head2" parent="." instance=ExtResource("225_4to4a")]
+
+[node name="statue_obelisk2" parent="." instance=ExtResource("226_dmypa")]
+
+[node name="statue_ring2" parent="." instance=ExtResource("227_46eoq")]
+
+[node name="stone_largeA2" parent="." instance=ExtResource("228_8fi15")]
+
+[node name="stone_largeB2" parent="." instance=ExtResource("229_ndx7f")]
+
+[node name="stone_largeC2" parent="." instance=ExtResource("230_8qt6t")]
+
+[node name="stone_largeD2" parent="." instance=ExtResource("231_ha3ux")]
+
+[node name="stone_largeE2" parent="." instance=ExtResource("232_fydva")]
+
+[node name="stone_largeF2" parent="." instance=ExtResource("233_pycrh")]
+
+[node name="stone_smallA2" parent="." instance=ExtResource("234_ilm6k")]
+
+[node name="stone_smallB2" parent="." instance=ExtResource("235_08r84")]
+
+[node name="stone_smallC2" parent="." instance=ExtResource("236_ln5ur")]
+
+[node name="stone_smallD2" parent="." instance=ExtResource("237_mbhl8")]
+
+[node name="stone_smallE2" parent="." instance=ExtResource("238_6k7vv")]
+
+[node name="stone_smallF2" parent="." instance=ExtResource("239_it8mx")]
+
+[node name="stone_smallFlatA2" parent="." instance=ExtResource("240_pn33f")]
+
+[node name="stone_smallFlatB2" parent="." instance=ExtResource("241_msmu8")]
+
+[node name="stone_smallFlatC2" parent="." instance=ExtResource("242_yuk6a")]
+
+[node name="stone_smallG2" parent="." instance=ExtResource("243_kbdin")]
+
+[node name="stone_smallH2" parent="." instance=ExtResource("244_6pxwu")]
+
+[node name="stone_smallI2" parent="." instance=ExtResource("245_4wf4h")]
+
+[node name="stone_smallTopA2" parent="." instance=ExtResource("246_vxt1f")]
+
+[node name="stone_smallTopB2" parent="." instance=ExtResource("247_sytnh")]
+
+[node name="stone_tallA2" parent="." instance=ExtResource("248_clous")]
+
+[node name="stone_tallB2" parent="." instance=ExtResource("249_t3cea")]
+
+[node name="stone_tallC2" parent="." instance=ExtResource("250_pqrhx")]
+
+[node name="stone_tallD2" parent="." instance=ExtResource("251_mkf38")]
+
+[node name="stone_tallE2" parent="." instance=ExtResource("252_hrtw8")]
+
+[node name="stone_tallF2" parent="." instance=ExtResource("253_beb0k")]
+
+[node name="stone_tallG2" parent="." instance=ExtResource("254_87u80")]
+
+[node name="stone_tallH2" parent="." instance=ExtResource("255_tmrgi")]
+
+[node name="stone_tallI2" parent="." instance=ExtResource("256_u3bns")]
+
+[node name="stone_tallJ2" parent="." instance=ExtResource("257_ydb05")]
+
+[node name="stump_old2" parent="." instance=ExtResource("258_5qxi0")]
+
+[node name="stump_oldTall2" parent="." instance=ExtResource("259_1nden")]
+
+[node name="stump_round2" parent="." instance=ExtResource("260_klo6j")]
+
+[node name="stump_roundDetailed2" parent="." instance=ExtResource("261_5mc1m")]
+
+[node name="stump_square2" parent="." instance=ExtResource("262_ojrs3")]
+
+[node name="stump_squareDetailed2" parent="." instance=ExtResource("263_fq1fo")]
+
+[node name="stump_squareDetailedWide2" parent="." instance=ExtResource("264_44l5x")]
+
+[node name="tent_detailedClosed2" parent="." instance=ExtResource("265_vefw3")]
+
+[node name="tent_detailedOpen2" parent="." instance=ExtResource("266_jv8nu")]
+
+[node name="tent_smallClosed2" parent="." instance=ExtResource("267_12n3l")]
+
+[node name="tent_smallOpen2" parent="." instance=ExtResource("268_jg0gp")]
+
+[node name="tree_blocks2" parent="." instance=ExtResource("269_1aao0")]
+
+[node name="tree_blocks_dark2" parent="." instance=ExtResource("270_3akig")]
+
+[node name="tree_blocks_fall2" parent="." instance=ExtResource("271_pv30b")]
+
+[node name="tree_cone2" parent="." instance=ExtResource("272_ej5yh")]
+
+[node name="tree_cone_dark2" parent="." instance=ExtResource("273_ylvv0")]
+
+[node name="tree_cone_fall2" parent="." instance=ExtResource("274_vypr5")]
+
+[node name="tree_default2" parent="." instance=ExtResource("275_fg2ih")]
+
+[node name="tree_default_dark2" parent="." instance=ExtResource("276_qamqa")]
+
+[node name="tree_default_fall2" parent="." instance=ExtResource("277_0b7e1")]
+
+[node name="tree_detailed2" parent="." instance=ExtResource("278_m3gtv")]
+
+[node name="tree_detailed_dark2" parent="." instance=ExtResource("279_5mpc2")]
+
+[node name="tree_detailed_fall2" parent="." instance=ExtResource("280_irav2")]
+
+[node name="tree_fat2" parent="." instance=ExtResource("281_ytgl7")]
+
+[node name="tree_fat_darkh2" parent="." instance=ExtResource("282_7x6mm")]
+
+[node name="tree_fat_fall2" parent="." instance=ExtResource("283_mfmpg")]
+
+[node name="tree_oak2" parent="." instance=ExtResource("284_bjteg")]
+
+[node name="tree_oak_dark2" parent="." instance=ExtResource("285_tqqel")]
+
+[node name="tree_oak_fall2" parent="." instance=ExtResource("286_u7lgc")]
+
+[node name="tree_palm2" parent="." instance=ExtResource("287_1c4bo")]
+
+[node name="tree_palmBend2" parent="." instance=ExtResource("288_ch8ry")]
+
+[node name="tree_palmDetailedShort2" parent="." instance=ExtResource("289_kovi1")]
+
+[node name="tree_palmDetailedTall2" parent="." instance=ExtResource("290_p3tbu")]
+
+[node name="tree_palmShort2" parent="." instance=ExtResource("291_nvhew")]
+
+[node name="tree_palmTall2" parent="." instance=ExtResource("292_5uhoq")]
+
+[node name="tree_pineDefaultA2" parent="." instance=ExtResource("293_4wna1")]
+
+[node name="tree_pineDefaultB2" parent="." instance=ExtResource("294_3lnpr")]
+
+[node name="tree_pineGroundA2" parent="." instance=ExtResource("295_4du7s")]
+
+[node name="tree_pineGroundB2" parent="." instance=ExtResource("296_oc121")]
+
+[node name="tree_pineRoundA2" parent="." instance=ExtResource("297_pjmvk")]
+
+[node name="tree_pineRoundB2" parent="." instance=ExtResource("298_w6q1g")]
+
+[node name="tree_pineRoundC2" parent="." instance=ExtResource("299_jn7kd")]
+
+[node name="tree_pineRoundD2" parent="." instance=ExtResource("300_5gueb")]
+
+[node name="tree_pineRoundE2" parent="." instance=ExtResource("301_y6hjv")]
+
+[node name="tree_pineRoundF2" parent="." instance=ExtResource("302_7fux8")]
+
+[node name="tree_pineSmallA2" parent="." instance=ExtResource("303_y6q2h")]
+
+[node name="tree_pineSmallB2" parent="." instance=ExtResource("304_h04jy")]
+
+[node name="tree_pineSmallC2" parent="." instance=ExtResource("305_nlop1")]
+
+[node name="tree_pineSmallD2" parent="." instance=ExtResource("306_tt6f1")]
+
+[node name="tree_pineTallA2" parent="." instance=ExtResource("307_8h554")]
+
+[node name="tree_pineTallA_detailed2" parent="." instance=ExtResource("308_6thx4")]
+
+[node name="tree_pineTallB2" parent="." instance=ExtResource("309_b52d0")]
+
+[node name="tree_pineTallB_detailed2" parent="." instance=ExtResource("310_hcpdq")]
+
+[node name="tree_pineTallC2" parent="." instance=ExtResource("311_iudhu")]
+
+[node name="tree_pineTallC_detailed2" parent="." instance=ExtResource("312_ek6yl")]
+
+[node name="tree_pineTallD2" parent="." instance=ExtResource("313_7d0kp")]
+
+[node name="tree_pineTallD_detailed2" parent="." instance=ExtResource("314_ax5bg")]
+
+[node name="tree_plateau2" parent="." instance=ExtResource("315_782x3")]
+
+[node name="tree_plateau_dark2" parent="." instance=ExtResource("316_llsed")]
+
+[node name="tree_plateau_fall2" parent="." instance=ExtResource("317_lghny")]
+
+[node name="tree_simple2" parent="." instance=ExtResource("318_o142o")]
+
+[node name="tree_simple_dark2" parent="." instance=ExtResource("319_c6bgy")]
+
+[node name="tree_simple_fall2" parent="." instance=ExtResource("320_aniy3")]
+
+[node name="tree_small2" parent="." instance=ExtResource("321_7bwr0")]
+
+[node name="tree_small_dark2" parent="." instance=ExtResource("322_l1xg2")]
+
+[node name="tree_small_fall2" parent="." instance=ExtResource("323_26p0a")]
+
+[node name="tree_tall2" parent="." instance=ExtResource("324_dxee0")]
+
+[node name="tree_tall_dark2" parent="." instance=ExtResource("325_01yu3")]
+
+[node name="tree_tall_fall2" parent="." instance=ExtResource("326_ur4dt")]
+
+[node name="tree_thin2" parent="." instance=ExtResource("327_v1xjq")]
+
+[node name="tree_thin_dark2" parent="." instance=ExtResource("328_gmi8w")]
+
+[node name="tree_thin_fall2" parent="." instance=ExtResource("329_o5yu0")]

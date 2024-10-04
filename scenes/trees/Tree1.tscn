@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt2d3r147ufa8"]
+
+[ext_resource type="PackedScene" uid="uid://dvtov8o6f8hrp" path="res://godot_assets/tiles/tree_pineSmallA.glb" id="1_lfjtd"]
+[ext_resource type="PackedScene" uid="uid://b32j6y5a2afjl" path="res://godot_assets/tiles/tree_pineSmallB.glb" id="2_syic2"]
+[ext_resource type="PackedScene" uid="uid://gbqxme4vijdn" path="res://godot_assets/tiles/tree_pineSmallC.glb" id="3_7bqv7"]
+[ext_resource type="PackedScene" uid="uid://olevu7542c5d" path="res://godot_assets/tiles/tree_pineSmallD.glb" id="4_640h7"]
+
+[node name="Tree1" type="Node3D"]
+
+[node name="tree_pineSmallA2" parent="." instance=ExtResource("1_lfjtd")]
+visible = false
+
+[node name="tree_pineSmallB2" parent="." instance=ExtResource("2_syic2")]
+visible = false
+
+[node name="tree_pineSmallC2" parent="." instance=ExtResource("3_7bqv7")]
+visible = false
+
+[node name="tree_pineSmallD2" parent="." instance=ExtResource("4_640h7")]
+visible = false

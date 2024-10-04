@@ -1,38 +1,38 @@
-[gd_scene load_steps=7 format=3 uid="uid://bgkgfr60fccil"]
+[gd_scene load_steps=8 format=3 uid="uid://bgkgfr60fccil"]
 
+[ext_resource type="Script" path="res://Sun.gd" id="2_e5qsn"]
 [ext_resource type="PackedScene" uid="uid://dk17005eayofj" path="res://scenes/floor/floor.tscn" id="2_iyapn"]
-[ext_resource type="PackedScene" uid="uid://boi4caq6r33hb" path="res://scenes/models/ship-large.glb" id="2_kxmpi"]
-[ext_resource type="Script" path="res://camera_animation.gd" id="3_hdxcd"]
 [ext_resource type="Environment" uid="uid://cfkrehqdxj313" path="res://scenes/camera/Environment.tres" id="4_umpv8"]
-[ext_resource type="PackedScene" uid="uid://d1cmmwo2iuind" path="res://scenes/island/Island.tscn" id="6_14pca"]
 [ext_resource type="PackedScene" uid="uid://dfhpkt63waxiu" path="res://scenes/player/Player.tscn" id="7_efmsl"]
+[ext_resource type="PackedScene" uid="uid://b5vqkgkq3uxcx" path="res://scenes/tile-map/3DTileScene.tscn" id="7_yv22l"]
+[ext_resource type="PackedScene" uid="uid://dhlmnbij74yt" path="res://scenes/player/NPC.tscn" id="8_qb7pn"]
+[ext_resource type="Script" path="res://camera_3d.gd" id="9_vcqrr"]
 
 [node name="Main" type="Node3D"]
 
 [node name="Floor" parent="." instance=ExtResource("2_iyapn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.96173, 0)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.257217, -0.836887, 0.483177, 0, 0.5, 0.866025, -0.966354, 0.222757, -0.128609, 19.5433, 16, 8)
+transform = Transform3D(-0.801087, -0.013674, 0.598392, 0.479851, -0.612254, 0.628401, 0.357775, 0.790543, 0.49703, 0, 20, 0)
 shadow_enabled = true
 shadow_bias = 4.0
 shadow_normal_bias = 1.0
+script = ExtResource("2_e5qsn")
 
-[node name="ship-large2" parent="." instance=ExtResource("2_kxmpi")]
-transform = Transform3D(0.366079, 0, 0.930584, 0, 1, 0, -0.930584, 0, 0.366079, -1.40008, -0.699887, -26.8555)
+[node name="Player" parent="." instance=ExtResource("7_efmsl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69652, 2.50735, 0)
+
+[node name="TileGrass" parent="." instance=ExtResource("7_yv22l")]
+
+[node name="NPC" parent="." instance=ExtResource("8_qb7pn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
 
 [node name="CameraPivot" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4307, 3.21205, 0)
-script = ExtResource("3_hdxcd")
+visible = false
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 0.52703, 0.849847, 0, -0.849847, 0.52703, 0, 11.0692, 5.52354)
 environment = ExtResource("4_umpv8")
 current = true
 fov = 70.0
-
-[node name="Node3D" parent="." instance=ExtResource("6_14pca")]
-
-[node name="CharacterBody3D" parent="." instance=ExtResource("7_efmsl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69652, 2.50735, 0)
+script = ExtResource("9_vcqrr")
