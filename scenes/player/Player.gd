@@ -1,17 +1,31 @@
 extends CharacterBody3D
 
 
-const SPEED = 2.0
+const SPEED = 1.0
 const JUMP_VELOCITY = 4.5
 
 @onready var cameraPivot = $"../CameraPivot"
 @onready var animationTree:AnimationTree = $"AuxScene/AnimationTree"
+@onready var hitArea: Area3D = $HitArea
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 
 func _physics_process(delta: float) -> void:
+	#print(position)
+	
+	# Handle jump.
+	if Input.is_action_just_pressed("HIT") and is_on_floor():
+		print("Hitting 1")
+		
+		var bodies = hitArea.get_overlapping_areas()
+		for body in bodies:
+			if body.get_parent() != null and body.has_method("hit"):
+				print("Hitting ", body)
+				body.hit(40)
+			
+	
 	# Add the gravity.
 	if not is_on_floor() and global_position.y > 0.0:
 		velocity += get_gravity() * delta
@@ -58,7 +72,7 @@ func _physics_process(delta: float) -> void:
 	#print(speed)
 	if animationTree:
 		var oldAnimSpeed = animationTree.get("parameters/BlendSpace1D/blend_position")
-		animationTree.set("parameters/BlendSpace1D/blend_position",lerp(oldAnimSpeed, speed/4.0,delta*10))
+		animationTree.set("parameters/BlendSpace1D/blend_position",lerp(oldAnimSpeed, speed / (2*SPEED),delta*10))
 
 	#get_tree().call_group("NPC", "set_movement_target",global_position)
 #func _unhandled_input(event):

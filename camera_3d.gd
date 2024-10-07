@@ -1,6 +1,6 @@
 extends Camera3D
 
-@export var height = 10
+@export var height = 5
 @export var distance = 5
 
 # Called when the node enters the scene tree for the first time.

@@ -1,9 +1,9 @@
 extends CharacterBody3D
 
-const SPEED = 2.0
+const SPEED = 1.0
 const JUMP_VELOCITY = 4.5
 
-@export var movement_speed: float = 4.0
+@export var movement_speed: float = 1.0
 @onready var animationTree:AnimationTree = $"AuxScene/AnimationTree"
 @onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
 
@@ -11,7 +11,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	navigation_agent.velocity_computed.connect(Callable(_on_velocity_computed))
 	
-	set_movement_target(Vector3(10,0,0))
+	set_movement_target(Vector3(5.0, 0.0, 5.0))
 	
 	var timer := Timer.new()
 	add_child(timer)
@@ -21,8 +21,12 @@ func _ready():
 	
 	
 func set_movement_target(movement_target: Vector3):
+	var player = get_tree().get_nodes_in_group("Player")[0]
+	movement_target = player.global_position
+	print("set_movement_target ",movement_target)
+	
 	navigation_agent.set_target_position(movement_target)
-
+	
 func sort_closest(a:Node3D, b:Node3D) -> bool:
 	return b.global_position.distance_to(global_position) > a.global_position.distance_to(global_position)
 
@@ -34,7 +38,11 @@ func setTreeTarget():
 	var trees:Array[Node] = get_tree().get_nodes_in_group("tree")
 	
 	var minDist = 99999.0
+	tree = null
 	for t:Node3D in trees:
+		if t.growing or t.currHealth <= 0 or not t.has_method("hit") or t.get_tree() == null:
+			continue
+			
 		var dist = t.global_position.distance_squared_to(global_position)
 		if dist < minDist:
 			minDist = dist
@@ -57,13 +65,12 @@ func _process(delta: float):
 	#	tree = null
 		
 	var distance = navigation_agent.distance_to_target()
-	if tree and (navigation_agent.is_target_reached() or distance < 1.5 or navigation_agent.is_target_reachable()):
-		print("reached")
-		tree.remove_from_group("tree")
-		tree.queue_free()
-		set_movement_target(position)
-		tree = null
-	
+	if tree:
+		if navigation_agent.is_target_reached() or distance < 5.0 or navigation_agent.is_target_reachable():
+			#print("reached")
+			if tree.has_method("hit") and tree.hit(1) <= 0.0:
+				#set_movement_target(position)
+				tree = null
 	
 	if velocity.length() > 0.01:
 		rotation.y = lerp_angle(rotation.y,atan2(-velocity.x, -velocity.z),15*delta)

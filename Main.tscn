@@ -1,32 +1,27 @@
 [gd_scene load_steps=8 format=3 uid="uid://bgkgfr60fccil"]
 
 [ext_resource type="Script" path="res://Sun.gd" id="2_e5qsn"]
-[ext_resource type="PackedScene" uid="uid://dk17005eayofj" path="res://scenes/floor/floor.tscn" id="2_iyapn"]
 [ext_resource type="Environment" uid="uid://cfkrehqdxj313" path="res://scenes/camera/Environment.tres" id="4_umpv8"]
 [ext_resource type="PackedScene" uid="uid://dfhpkt63waxiu" path="res://scenes/player/Player.tscn" id="7_efmsl"]
 [ext_resource type="PackedScene" uid="uid://b5vqkgkq3uxcx" path="res://scenes/tile-map/3DTileScene.tscn" id="7_yv22l"]
 [ext_resource type="PackedScene" uid="uid://dhlmnbij74yt" path="res://scenes/player/NPC.tscn" id="8_qb7pn"]
+[ext_resource type="PackedScene" uid="uid://dwwgoodo0f43m" path="res://scenes/water/WaterPlane.tscn" id="8_srsv2"]
 [ext_resource type="Script" path="res://camera_3d.gd" id="9_vcqrr"]
 
 [node name="Main" type="Node3D"]
 
-[node name="Floor" parent="." instance=ExtResource("2_iyapn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.801087, -0.013674, 0.598392, 0.479851, -0.612254, 0.628401, 0.357775, 0.790543, 0.49703, 0, 20, 0)
+light_color = Color(0.710623, 0.606855, 0.998451, 1)
 shadow_enabled = true
-shadow_bias = 4.0
-shadow_normal_bias = 1.0
 script = ExtResource("2_e5qsn")
+speed = 0.065
 
 [node name="Player" parent="." instance=ExtResource("7_efmsl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69652, 2.50735, 0)
-
-[node name="TileGrass" parent="." instance=ExtResource("7_yv22l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.294768, 0.722467, 4.11768)
 
 [node name="NPC" parent="." instance=ExtResource("8_qb7pn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.69036, 1, 4.45151)
 
 [node name="CameraPivot" type="Node3D" parent="."]
 visible = false
@@ -36,3 +31,11 @@ environment = ExtResource("4_umpv8")
 current = true
 fov = 70.0
 script = ExtResource("9_vcqrr")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("4_umpv8")
+
+[node name="Node3D" parent="." instance=ExtResource("7_yv22l")]
+
+[node name="Water" parent="." instance=ExtResource("8_srsv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.341189, 0)

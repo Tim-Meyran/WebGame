@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfhpkt63waxiu"]
+[gd_scene load_steps=5 format=3 uid="uid://dfhpkt63waxiu"]
 
 [ext_resource type="Script" path="res://scenes/player/Player.gd" id="1_5d2gy"]
 [ext_resource type="PackedScene" uid="uid://bun8pokmljdha" path="res://scenes/player/aux_scene.tscn" id="2_okopk"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1ahif"]
 radius = 0.25
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xp8le"]
+radius = 1.0
 
 [node name="CharacterBody3D" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_5d2gy")
@@ -14,4 +17,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_1ahif")
 
 [node name="AuxScene" parent="." instance=ExtResource("2_okopk")]
-transform = Transform3D(-0.01, 0, -8.74228e-10, 0, 0.01, 0, 8.74228e-10, 0, -0.01, 0, 0, 0)
+transform = Transform3D(-0.005, 0, -7.54979e-10, 0, 0.005, 0, 7.54979e-10, 0, -0.005, 0, 0, 0)
+
+[node name="HitArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HitArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.934956, -0.461469)
+shape = SubResource("SphereShape3D_xp8le")
